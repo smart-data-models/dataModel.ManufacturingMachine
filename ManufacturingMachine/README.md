@@ -3,7 +3,7 @@ Version: 0.0.1
 
 ## Description 
 
-description of a generic machine
+Description of a generic machine
 
 This data model comes from the original project GSMA IoT project, https://www.gsma.com/iot/iot-big-data/.
 ### Specification
