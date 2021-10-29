@@ -1,10 +1,10 @@
 {
-    "@id": "dtmi:com:ngsi-ld:Machine;0",
+    "@id": "dtmi:com:ngsi-ld:ManufacturingMachine;0",
     "@type": "Interface",
     "@context": "dtmi:dtdl:context;2",
     "comment": "Smart Data models - Machine dataModel schema, adapted to DTDL from smartdatamodels.org. Source: https://raw.githubusercontent.com/smart-data-models/dataModel.ManufacturingMachine/master/ManufacturingMachine/schema.json",
-    "description": "description of a generic machine",
-    "displayName": "Machine",
+    "description": "Description of a generic machine",
+    "displayName": "ManufacturingMachine",
     "contents": [
         {
             "name": "alternateName",
