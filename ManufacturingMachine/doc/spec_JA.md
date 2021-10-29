@@ -484,10 +484,10 @@ ManufacturingMachine:
 </details>    
 ## ペイロードの例  
 #### ManufacturingMachine NGSI-v2 キーバリューの例  
-JSON-LD形式でManufacturingMachineをkey-valuesとして表現した例です。これは、`options=keyValues`を使用した場合のNGSI-v2との互換性があり、個々のエンティティのコンテキストデータを返します。  
+JSON-LD形式でManufacturingMachineをkey-valuesとして表現した例です。これは`options=keyValues`を使用した場合のNGSI-v2との互換性があり、個々のエンティティのコンテキストデータを返します。  
 #### ManufacturingMachine NGSI-v2 正規化例  
 ここでは、正規化されたJSON-LD形式のManufacturingMachineの例を示します。これは、オプションを使用しない場合のNGSI-v2との互換性があり、個々のエンティティのコンテキストデータを返します。  
 #### ManufacturingMachine NGSI-LDのキーバリューの例  
-JSON-LD形式でManufacturingMachineをkey-valuesで表現した例です。これは`options=keyValues`を使った場合のNGSI-LDとの互換性があり、個々のエンティティのコンテキストデータを返します。  
+ここではManufacturingMachineをkey-valuesとしてJSON-LD形式で表現しています。これは`options=keyValues`を使った場合のNGSI-LDとの互換性があり、個々のエンティティのコンテキストデータを返します。  
 #### ManufacturingMachine NGSI-LDの正規化例  
 ここでは、正規化されたJSON-LD形式のManufacturingMachineの例を示します。これはオプションを使用しない場合のNGSI-LDとの互換性があり、個々のエンティティのコンテキストデータを返します。  
