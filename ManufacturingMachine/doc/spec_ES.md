@@ -486,7 +486,7 @@ ManufacturingMachine:
 #### ManufacturingMachine NGSI-v2 key-values Ejemplo  
 Aquí hay un ejemplo de una ManufacturingMachine en formato JSON-LD como valores-clave. Esto es compatible con NGSI-v2 cuando se utiliza `options=keyValues` y devuelve los datos de contexto de una entidad individual.  
 #### ManufacturingMachine NGSI-v2 normalizado Ejemplo  
-Aquí hay un ejemplo de una ManufacturingMachine en formato JSON-LD normalizado. Esto es compatible con NGSI-v2 cuando no se utilizan opciones y devuelve los datos de contexto de una entidad individual.  
+Este es un ejemplo de una ManufacturingMachine en formato JSON-LD normalizado. Esto es compatible con NGSI-v2 cuando no se utilizan opciones y devuelve los datos de contexto de una entidad individual.  
 #### ManufacturingMachine NGSI-LD key-values Ejemplo  
 Aquí hay un ejemplo de una ManufacturingMachine en formato JSON-LD como key-values. Esto es compatible con NGSI-LD cuando se utiliza `options=keyValues` y devuelve los datos de contexto de una entidad individual.  
 #### ManufacturingMachine NGSI-LD normalizado Ejemplo  
