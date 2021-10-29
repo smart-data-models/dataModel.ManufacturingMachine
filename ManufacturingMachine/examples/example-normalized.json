@@ -1,6 +1,6 @@
 {
   "id": "urn:ngsi-ld:Machine:9166c528-9c98-4579-a5d3-8068aea5d6c0",
-  "type": "Machine",
+  "type": "ManufacturingMachine",
   "source": {
     "type": "Text",
     "value": "https://source.example.com"

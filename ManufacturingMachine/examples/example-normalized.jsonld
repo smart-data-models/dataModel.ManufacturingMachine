@@ -4,7 +4,7 @@
     "https://raw.githubusercontent.com/GSMADeveloper/NGSI-LD-Entities/master/examples/Machine-context.jsonld"
   ],
   "id": "urn:ngsi-ld:Machine:9166c528-9c98-4579-a5d3-8068aea5d6c0",
-  "type": "Machine",
+  "type": "ManufacturingMachine",
   "source": {
     "type": "Property",
     "value": "https://source.example.com"

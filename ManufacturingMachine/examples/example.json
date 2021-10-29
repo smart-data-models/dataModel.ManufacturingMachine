@@ -1,8 +1,4 @@
 {
-  "@context": [
-    "https://smartdatamodels.org/context.jsonld",
-    "https://raw.githubusercontent.com/GSMADeveloper/NGSI-LD-Entities/master/examples/Machine-context.jsonld"
-  ],
   "assetIdentifier": "ID12345",
   "batteryLevel": 0.7,
   "building": "urn:ngsi-ld:Building:8683b757-649c-49e0-ac89-ad392c9a0d0c",
@@ -51,6 +47,6 @@
     "HTTPS",
     "FTP"
   ],
-  "type": "Machine",
+  "type": "ManufacturingMachine",
   "voltage": 220
 }
