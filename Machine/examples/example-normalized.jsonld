@@ -85,7 +85,7 @@
     "type": "Property",
     "value": "10A"
   },
-  "supportedProtocols": {
+  "supportedProtocol": {
     "type": "Property",
     "value": [
       "HTTP",
@@ -108,7 +108,7 @@
       ]
     }
   },
-  "subscriptionServices": {
+  "subscriptionService": {
     "type": "Relationship",
     "object": [
       "urn:ngsi-ld:SubscriptionService:0d95b03c-47c1-11e8-99fd-2c4d549a1ab2",
