@@ -11,8 +11,8 @@
 <details><summary><strong>full yaml details</strong></summary>    
 ```yaml  
 ManufacturingMachine:    
-  description: 'description of a generic machine'    
-  modelTags: ""    
+  description: 'Description of a generic machine'    
+  modelTags: GSMA    
   properties:    
     address:    
       description: 'The mailing address'    
@@ -463,7 +463,7 @@ ManufacturingMachine:
     type:    
       description: 'NGSI entity type. It has to be Machine.'    
       enum:    
-        - Machine    
+        - ManufacturingMachine    
       type: string    
       x-ngsi:    
         model: https://schema.org/Text    
@@ -488,6 +488,6 @@ ManufacturingMachine:
 #### ManufacturingMachine NGSI-v2 正規化例  
 ここでは、正規化されたJSON-LD形式のManufacturingMachineの例を示します。これは、オプションを使用しない場合のNGSI-v2との互換性があり、個々のエンティティのコンテキストデータを返します。  
 #### ManufacturingMachine NGSI-LDのキーバリューの例  
-ここではManufacturingMachineをkey-valuesとしてJSON-LD形式で表現しています。これは`options=keyValues`を使った場合のNGSI-LDとの互換性があり、個々のエンティティのコンテキストデータを返します。  
+JSON-LD形式でManufacturingMachineをkey-valuesで表現した例です。これは`options=keyValues`を使った場合のNGSI-LDとの互換性があり、個々のエンティティのコンテキストデータを返します。  
 #### ManufacturingMachine NGSI-LDの正規化例  
 ここでは、正規化されたJSON-LD形式のManufacturingMachineの例を示します。これはオプションを使用しない場合のNGSI-LDとの互換性があり、個々のエンティティのコンテキストデータを返します。  
