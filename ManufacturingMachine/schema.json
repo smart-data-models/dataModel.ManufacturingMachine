@@ -2,8 +2,9 @@
   "$schema": "http://json-schema.org/schema",
   "$schemaVersion": "0.0.1",
   "$id": "https://smart-data-models.github.io/dataModel.Machine/Machine/schema.json",
+  "modelTags": "GSMA",
   "title": "Smart Data models - Machine dataModel schema,",
-  "description": "description of a generic machine",
+  "description": "Description of a generic machine",
   "type": "object",
   "required": [
     "id",
@@ -22,7 +23,7 @@
           "type": "string",
           "description": "Property. Model:'https://schema.org/Text'. NGSI entity type. It has to be Machine.",
           "enum": [
-            "Machine"
+            "ManufacturingMachine"
           ]
         },
         "machineModel": {
