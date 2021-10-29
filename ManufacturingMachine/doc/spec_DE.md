@@ -490,4 +490,4 @@ ManufacturingMachine:
 #### ManufacturingMachine NGSI-LD Schlüsselwerte Beispiel  
 Hier ist ein Beispiel für eine ManufacturingMachine im JSON-LD-Format als Key-Values. Dies ist mit NGSI-LD kompatibel, wenn `options=keyValues` verwendet wird und liefert die Kontextdaten einer einzelnen Entität.  
 #### ManufacturingMachine NGSI-LD normalisiert Beispiel  
-Hier ist ein Beispiel für eine ManufacturingMachine im JSON-LD-Format in normalisierter Form. Dies ist kompatibel mit NGSI-LD, wenn keine Optionen verwendet werden, und liefert die Kontextdaten einer einzelnen Entität.  
+Hier ist ein Beispiel für eine ManufacturingMachine im JSON-LD-Format in normalisierter Form. Dies ist mit NGSI-LD kompatibel, wenn keine Optionen verwendet werden, und liefert die Kontextdaten einer einzelnen Entität.  
