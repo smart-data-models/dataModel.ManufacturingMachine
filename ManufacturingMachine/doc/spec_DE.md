@@ -11,8 +11,8 @@ Entität: ManufacturingMachine
 <details><summary><strong>full yaml details</strong></summary>    
 ```yaml  
 ManufacturingMachine:    
-  description: 'description of a generic machine'    
-  modelTags: ""    
+  description: 'Description of a generic machine'    
+  modelTags: GSMA    
   properties:    
     address:    
       description: 'The mailing address'    
@@ -463,7 +463,7 @@ ManufacturingMachine:
     type:    
       description: 'NGSI entity type. It has to be Machine.'    
       enum:    
-        - Machine    
+        - ManufacturingMachine    
       type: string    
       x-ngsi:    
         model: https://schema.org/Text    
