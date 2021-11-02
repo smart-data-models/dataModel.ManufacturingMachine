@@ -1,6 +1,5 @@
 ManufacturingMachine:
   description: 'Description of a generic machine'
-  modelTags: GSMA
   properties:
     address:
       description: 'The mailing address'
@@ -467,4 +466,9 @@ ManufacturingMachine:
     - id
     - type
   type: object
-  version: 0.0.1
+  x-derived-from: ""
+  x-disclaimer: 'Redistribution and use in source and binary forms, with or without modification, are permitted  provided that the license conditions are met. Copyleft (c) 2021 Contributors to Smart Data Models Program'
+  x-license-url: https://github.com/smart-data-models/dataModel.ManufacturingMachine/blob/master/ManufacturingMachine/LICENSE.md
+  x-model-schema: https://smart-data-models.github.io/dataModel.Machine/Machine/schema.json
+  x-model-tags: GSMA
+  x-version: 0.0.1
