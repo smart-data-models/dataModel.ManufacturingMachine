@@ -24,6 +24,7 @@
         "machineOwner": "https://smartdatamodels.org/dataModel.ManufacturingMachine/machineOwner",
         "manufacturedAt": "https://smartdatamodels.org/dataModel.ManufacturingMachine/manufacturedAt",
         "name": "https://smartdatamodels.org/name",
+        "ngsi-ld": "https://uri.etsi.org/ngsi-ld/",
         "online": "https://smartdatamodels.org/dataModel.ManufacturingMachine/online",
         "osVersion": "https://smartdatamodels.org/dataModel.ManufacturingMachine/osVersion",
         "owner": "https://smartdatamodels.org/owner",
