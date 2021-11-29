@@ -1,10 +1,10 @@
 {
   "$schema": "http://json-schema.org/schema#",
-  "$schemaVersion": "0.0.1",
+  "$schemaVersion": "0.0.2",
   "modelTags": "GSMA",
   "$id": "https://smart-data-models.github.io/dataModel.ManufacturingMachine/ManufacturingOperation/schema.json",
   "title": "Smart Data models - Machine-Operation schema",
-  "description": "A description of a Machine-Operation",
+  "description": "This entity contains a harmonised description of a generic machine operation. This entity is primarily associated with the industry segment and related IoT applications. Each MachineOperation instance will be related to a specific Machine instance.",
   "type": "object",
   "allOf": [
     {
