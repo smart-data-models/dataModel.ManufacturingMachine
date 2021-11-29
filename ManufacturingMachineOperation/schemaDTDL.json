@@ -3,7 +3,7 @@
     "@type": "Interface",
     "@context": "dtmi:dtdl:context;2",
     "comment": "Smart Data models - Machine-Operation schema adapted to DTDL from smartdatamodels.org. Source: https://raw.githubusercontent.com/smart-data-models/dataModel.ManufacturingMachine/master/ManufacturingMachineOperation/schema.json",
-    "description": "A description of a Machine-Operation",
+    "description": "This entity contains a harmonised description of a generic machine operation. This entity is primarily associated with the industry segment and related IoT applications. Each MachineOperation instance will be related to a specific Machine instance.",
     "displayName": "ManufacturingMachineOperation",
     "contents": [
         {
