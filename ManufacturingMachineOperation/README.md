@@ -1,9 +1,9 @@
 # ManufacturingMachineOperation
-Version: 0.0.1
+Version: 0.0.2
 
 ## Description 
 
-A description of a Machine-Operation
+This entity contains a harmonised description of a generic machine operation. This entity is primarily associated with the industry segment and related IoT applications. Each MachineOperation instance will be related to a specific Machine instance.
 
 This data model comes from the original project GSMA IoT project, https://www.gsma.com/iot/iot-big-data/.
 ### Specification
