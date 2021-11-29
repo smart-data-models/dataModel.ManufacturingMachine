@@ -2,7 +2,7 @@
 ===================================  
 [オープンライセンス](https://github.com/smart-data-models//dataModel.ManufacturingMachine/blob/master/ManufacturingMachineOperation/LICENSE.md)  
 [document generated automatically](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
-グローバルな記述。**機械操作の説明**。  
+グローバルな記述。**このエンティティは、一般的な機械操作の調和された記述を含む。このエンティティは、主に産業セグメントと関連するIoTアプリケーションに関連しています。各MachineOperationインスタンスは、特定のMachineインスタンスに関連します。  
 
 ## プロパティのリスト  
 
@@ -15,7 +15,7 @@
 <details><summary><strong>full yaml details</strong></summary>    
 ```yaml  
 ManufacturingMachineOperation:    
-  description: 'A description of a Machine-Operation'    
+  description: 'This entity contains a harmonised description of a generic machine operation. This entity is primarily associated with the industry segment and related IoT applications. Each MachineOperation instance will be related to a specific Machine instance.'    
   properties:    
     address:    
       description: 'The mailing address'    
@@ -381,9 +381,9 @@ ManufacturingMachineOperation:
   x-derived-from: ""    
   x-disclaimer: 'Redistribution and use in source and binary forms, with or without modification, are permitted  provided that the license conditions are met. Copyleft (c) 2021 Contributors to Smart Data Models Program'    
   x-license-url: https://github.com/smart-data-models/dataModel.ManufacturingMachine/blob/master/ManufacturingMachineOperation/LICENSE.md    
-  x-model-schema: https://smart-data-models.github.io/dataModel.ManufacturingMachine/ManufacturingOperation/schema.json    
+  x-model-schema: https://smart-data-models.github.io/dataModel.ManufacturingMachine/ManufacturingMachineOperation/schema.json    
   x-model-tags: GSMA    
-  x-version: 0.0.1    
+  x-version: 0.0.2    
 ```  
 </details>    
 ## ペイロードの例  
@@ -494,7 +494,7 @@ ManufacturingMachineOperation:
 }  
 ```  
 #### ManufacturingMachineOperation NGSI-LDのキーバリューの例  
-ManufacturingMachineOperationをkey-valuesとしてJSON-LD形式で表現した例を示します。これは、`options=keyValues`を使用した場合のNGSI-LDとの互換性があり、個々のエンティティのコンテキストデータを返します。  
+ManufacturingMachineOperationをkey-valuesとしてJSON-LD形式で表現した例を示します。これは`options=keyValues`を使った場合のNGSI-LDとの互換性があり、個々のエンティティのコンテキストデータを返します。  
 ```json  
 {  
   "@context": [  
