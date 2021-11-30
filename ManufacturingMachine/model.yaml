@@ -448,12 +448,11 @@ ManufacturingMachine:
         model: https://schema.org/Text
         type: Property
     type:
-      description: 'NGSI entity type. It has to be Machine.'
+      description: 'NGSI entity type. It has to be ManufacturingMachine.'
       enum:
         - ManufacturingMachine
       type: string
       x-ngsi:
-        model: https://schema.org/Text
         type: Property
     voltage:
       description: 'The nominal required supply voltage, in volts'
@@ -469,6 +468,6 @@ ManufacturingMachine:
   x-derived-from: ""
   x-disclaimer: 'Redistribution and use in source and binary forms, with or without modification, are permitted  provided that the license conditions are met. Copyleft (c) 2021 Contributors to Smart Data Models Program'
   x-license-url: https://github.com/smart-data-models/dataModel.ManufacturingMachine/blob/master/ManufacturingMachine/LICENSE.md
-  x-model-schema: https://smart-data-models.github.io/dataModel.Machine/Machine/schema.json
+  x-model-schema: https://smart-data-models.github.io/dataModel.ManufacturingMachine/ManufacturingMachine/schema.json
   x-model-tags: GSMA
   x-version: 0.0.1
