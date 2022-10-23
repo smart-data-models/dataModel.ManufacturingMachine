@@ -1,17 +1,32 @@
-Entidad: ManufacturingMachineModel  
-==================================  
+<!-- 10-Header -->  
+[![Smart Data Models](https://smartdatamodels.org/wp-content/uploads/2022/01/SmartDataModels_logo.png "Logo")](https://smartdatamodels.org)  
+Entidad: ManufacturingMachineModel  
+==================================<!-- /10-Header -->  
+<!-- 15-License -->  
 [Licencia abierta](https://github.com/smart-data-models//dataModel.ManufacturingMachine/blob/master/ManufacturingMachineModel/LICENSE.md)  
 [documento generado automáticamente](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
+<!-- /15-License -->  
+<!-- 20-Description -->  
 Descripción global: **Esta entidad contiene una descripción armonizada de un modelo de máquina genérico. Esta entidad se asocia principalmente con el segmento de la industria y las aplicaciones IoT relacionadas. El machineModel incluye una estructura jerárquica que permite agrupar los modelos de máquina de forma flexible.**  
+versión: 0.0.1  
+<!-- /20-Description -->  
+<!-- 30-PropertiesList -->  
 
 ## Lista de propiedades  
 
-- `address`: La dirección postal  - `alternateName`: Un nombre alternativo para este artículo  - `areaServed`: La zona geográfica en la que se presta un servicio o se ofrece un artículo  - `brandName`: La marca de esta máquinaModelo.  - `dataProvider`: Una secuencia de caracteres que identifica al proveedor de la entidad de datos armonizada.  - `dateCreated`: Marca de tiempo de creación de la entidad. Suele ser asignada por la plataforma de almacenamiento.  - `dateModified`: Marca de tiempo de la última modificación de la entidad. Normalmente será asignada por la plataforma de almacenamiento.  - `description`: Una descripción de este artículo  - `documentation`: Referencia a la hoja de datos o a la documentación de otro fabricante sobre este modelo de máquina.  - `id`: Identificador único de la entidad  - `location`: Referencia Geojson al elemento. Puede ser Point, LineString, Polygon, MultiPoint, MultiLineString o MultiPolygon  - `machineModelChildren`: Hace referencia a cualquier entidad MachineModel de nivel inferior que esté basada en este modelo de máquina.  - `machineModelParent`: Hace referencia a cualquier MachineModel de nivel superior en el que se basa este modelo de máquina.  - `manufacturerName`: El nombre del fabricante de esta máquinaModelo.  - `manufacturingMachineType`: Lista de categorías funcionales que soporta este machineModel. Enum:'robot, cnc, 2dPrinter, 3dPrinter, 3dScanner, torno, injectionMolding, laserCutter, millingMachine, grindingMachine, stampingMachine, oven, kiln, packaging, mixer, dryer, fan, saw'  - `name`: El nombre de este artículo.  - `owner`: Una lista que contiene una secuencia de caracteres codificada en JSON que hace referencia a los identificadores únicos de los propietarios  - `processDescription`: Descripción del proceso industrial realizado por esta máquina.  - `root`: Un indicador lógico de que este Modelo de Máquina de Manufactura es la raíz de una jerarquía de Modelos de Máquina.Verdadero indica que es la raíz, falso indica que no es la raíz.  - `seeAlso`: lista de uri que apuntan a recursos adicionales sobre el artículo  - `source`: Una secuencia de caracteres que indica la fuente original de los datos de la entidad en forma de URL. Se recomienda que sea el nombre de dominio completo del proveedor de origen o la URL del objeto de origen.  - `standardOperations`: Enumera el conjunto de operaciones estándar que soporta este machineModel.  - `type`: Identificador de la entidad NGSI. Tiene que ser ManufacturingMachineModel  - `version`: El número de versión definido por el fabricante para el modelo de máquina.    
+<sup><sub>[*] Si no hay un tipo en un atributo es porque puede tener varios tipos o diferentes formatos/patrones</sub></sup>  
+- `address[object]`: La dirección postal  . Model: [https://schema.org/address](https://schema.org/address)- `alternateName[string]`: Un nombre alternativo para este artículo  - `areaServed[string]`: La zona geográfica en la que se presta un servicio o se ofrece un artículo  . Model: [https://schema.org/Text](https://schema.org/Text)- `brandName[string]`: La marca de esta máquinaModelo.  - `dataProvider[string]`: Una secuencia de caracteres que identifica al proveedor de la entidad de datos armonizada.  - `dateCreated[string]`: Marca de tiempo de creación de la entidad. Suele ser asignada por la plataforma de almacenamiento.  - `dateModified[string]`: Marca de tiempo de la última modificación de la entidad. Normalmente será asignada por la plataforma de almacenamiento.  - `description[string]`: Una descripción de este artículo  - `documentation[string]`: Referencia a la hoja de datos o a la documentación de otro fabricante sobre este modelo de máquina.  - `id[*]`: Identificador único de la entidad  - `location[*]`: Referencia Geojson al elemento. Puede ser Point, LineString, Polygon, MultiPoint, MultiLineString o MultiPolygon  - `machineModelChildren[array]`: Hace referencia a cualquier entidad MachineModel de nivel inferior que esté basada en este modelo de máquina.  - `machineModelParent[*]`: Hace referencia a cualquier MachineModel de nivel superior en el que se basa este modelo de máquina.  - `manufacturerName[string]`: El nombre del fabricante de esta máquinaModelo.  - `manufacturingMachineType[array]`: Lista de categorías funcionales que soporta este machineModel. Enum:'robot, cnc, 2dPrinter, 3dPrinter, 3dScanner, torno, injectionMolding, laserCutter, millingMachine, grindingMachine, stampingMachine, oven, kiln, packaging, mixer, dryer, fan, saw'  - `name[string]`: El nombre de este artículo.  - `owner[array]`: Una lista que contiene una secuencia de caracteres codificada en JSON que hace referencia a los identificadores únicos de los propietarios  - `processDescription[string]`: Descripción del proceso industrial que realiza esta máquina.  - `root[boolean]`: Un indicador lógico de que este Modelo de Máquina de Manufactura es la raíz de una jerarquía de Modelos de Máquina.Verdadero indica que es la raíz, falso indica que no es la raíz.  - `seeAlso[*]`: lista de uri que apuntan a recursos adicionales sobre el artículo  - `source[string]`: Una secuencia de caracteres que indica la fuente original de los datos de la entidad en forma de URL. Se recomienda que sea el nombre de dominio completo del proveedor de origen o la URL del objeto de origen.  - `standardOperations[array]`: Enumera el conjunto de operaciones estándar que soporta este machineModel.  - `type[string]`: Identificador de la entidad NGSI. Debe ser ManufacturingMachineModel  - `version[string]`: El número de versión definido por el fabricante para el modelo de máquina.  <!-- /30-PropertiesList -->  
+<!-- 35-RequiredProperties -->  
 Propiedades requeridas  
-- `id`  - `type`    
+- `id`  - `type`  <!-- /35-RequiredProperties -->  
+<!-- 40-RequiredProperties -->  
 Este modelo de datos procede del proyecto original de GSMA IoT, https://www.gsma.com/iot/iot-big-data/. Hay algunas adaptaciones menores para cumplir los requisitos de los modelos de datos inteligentes.  
+<!-- /40-RequiredProperties -->  
+<!-- 50-DataModelHeader -->  
 ## Descripción del modelo de datos de las propiedades  
 Ordenados alfabéticamente (haga clic para ver los detalles)  
+<!-- /50-DataModelHeader -->  
+<!-- 60-ModelYaml -->  
 <details><summary><strong>full yaml details</strong></summary>    
 ```yaml  
 ManufacturingMachineModel:    
@@ -381,9 +396,14 @@ ManufacturingMachineModel:
   x-version: 0.0.1    
 ```  
 </details>    
+<!-- /60-ModelYaml -->  
+<!-- 70-MiddleNotes -->  
+<!-- /70-MiddleNotes -->  
+<!-- 80-Examples -->  
 ## Ejemplo de carga útil  
 #### ManufacturingMachineModel NGSI-v2 key-values Ejemplo  
 Aquí hay un ejemplo de un ManufacturingMachineModel en formato JSON-LD como valores-clave. Esto es compatible con NGSI-v2 cuando se utiliza `options=keyValues` y devuelve los datos de contexto de una entidad individual.  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
   "id": "urn:ngsi-ld:MachineModel:e01f13d1-fea4-4cc4-92c9-0d9fadb2c509",  
@@ -411,8 +431,10 @@ ManufacturingMachineModel:
   ]  
 }  
 ```  
+</details>  
 #### ManufacturingMachineModel NGSI-v2 normalizado Ejemplo  
 Aquí hay un ejemplo de un ManufacturingMachineModel en formato JSON-LD normalizado. Esto es compatible con NGSI-v2 cuando no se utilizan opciones y devuelve los datos de contexto de una entidad individual.  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
   "id": "urn:ngsi-ld:MachineModel:e01f13d1-fea4-4cc4-92c9-0d9fadb2c509",  
@@ -482,110 +504,124 @@ ManufacturingMachineModel:
   }  
 }  
 ```  
+</details>  
 #### ManufacturingMachineModel NGSI-LD key-values Ejemplo  
 Aquí hay un ejemplo de un ManufacturingMachineModel en formato JSON-LD como valores-clave. Esto es compatible con NGSI-LD cuando se utiliza `options=keyValues` y devuelve los datos de contexto de una entidad individual.  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
-  "@context": [  
-    "https://smartdatamodels.github.io/dataModel.Transportation/context.jsonld"  
-  ],  
-  "id": "urn:ngsi-ld:MachineModel:e01f13d1-fea4-4cc4-92c9-0d9fadb2c509",  
-  "type": "ManufacturingMachineModel",  
-  "source": "https://source.example.com",  
-  "dataProvider": "https://provider.example.com",  
-  "name": "CA1256b",  
-  "documentation": "https://example.com",  
-  "description": "Machine to screen print t-shirts",  
-  "manufacturerName": "ScreenOPrint, Inc.",  
-  "brandName": "QuickT",  
-  "version": "v1",  
-  "manufacturingMachineType": [  
-    "2dPrinter"  
-  ],  
-  "root": false,  
-  "machineModelParent": "urn:ngsi-ld:MachineModel:4146335f-839f-4ff9-a575-6b4e6232b734",  
-  "machineModelChildren": [  
-    "urn:ngsi-ld:MachineModel:a74fcf24-58fa-11e8-ae3e-df1abd78f83f",  
-    "urn:ngsi-ld:MachineModel:b29330f6-58fa-11e8-93b5-1379ded6eef6"  
-  ],  
-  "processDescription": "Industrial printer used to mass print t-shirts",  
-  "standardOperations": [  
-    "print"  
-  ]  
+    "@context": [  
+        "https://smartdatamodels.github.io/dataModel.Transportation/context.jsonld",  
+        "https://raw.githubusercontent.com/smart-data-models/dataModel.ManufacturingMachine/master/context.jsonld"  
+    ],  
+    "id": "urn:ngsi-ld:MachineModel:e01f13d1-fea4-4cc4-92c9-0d9fadb2c509",  
+    "type": "ManufacturingMachineModel",  
+    "source": "https://source.example.com",  
+    "dataProvider": "https://provider.example.com",  
+    "name": "CA1256b",  
+    "documentation": "https://example.com",  
+    "description": "Machine to screen print t-shirts",  
+    "manufacturerName": "ScreenOPrint, Inc.",  
+    "brandName": "QuickT",  
+    "version": "v1",  
+    "manufacturingMachineType": [  
+        "2dPrinter"  
+    ],  
+    "root": false,  
+    "machineModelParent": "urn:ngsi-ld:MachineModel:4146335f-839f-4ff9-a575-6b4e6232b734",  
+    "machineModelChildren": [  
+        "urn:ngsi-ld:MachineModel:a74fcf24-58fa-11e8-ae3e-df1abd78f83f",  
+        "urn:ngsi-ld:MachineModel:b29330f6-58fa-11e8-93b5-1379ded6eef6"  
+    ],  
+    "processDescription": "Industrial printer used to mass print t-shirts",  
+    "standardOperations": [  
+        "print"  
+    ]  
 }  
 ```  
+</details>  
 #### ManufacturingMachineModel NGSI-LD normalizado Ejemplo  
 Aquí hay un ejemplo de un ManufacturingMachineModel en formato JSON-LD normalizado. Esto es compatible con NGSI-LD cuando no se utilizan opciones y devuelve los datos de contexto de una entidad individual.  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
-  "@context": [  
-    "https://smartdatamodels.github.io/dataModel.Transportation/context.jsonld"  
-  ],  
-  "id": "urn:ngsi-ld:MachineModel:e01f13d1-fea4-4cc4-92c9-0d9fadb2c509",  
-  "type": "ManufacturingMachineModel",  
-  "source": {  
-    "type": "Property",  
-    "value": "https://source.example.com"  
-  },  
-  "dataProvider": {  
-    "type": "Property",  
-    "value": "https://provider.example.com"  
-  },  
-  "name": {  
-    "type": "Property",  
-    "value": "CA1256b"  
-  },  
-  "documentation": {  
-    "type": "Property",  
-    "value":  "https://example.com"  
-  },  
-  "description": {  
-    "type": "Property",  
-    "value": "Machine to screen print t-shirts"  
-  },  
-  "manufacturerName": {  
-    "type": "Property",  
-    "value": "ScreenOPrint, Inc."  
-  },  
-  "brandName": {  
-    "type": "Property",  
-    "value": "QuickT"  
-  },  
-  "version": {  
-    "type": "Property",  
-    "value": "v1"  
-  },  
-  "manufacturingMachineType": {  
-    "type": "Property",  
-    "value": [  
-      "2dPrinter"  
-    ]  
-  },  
-  "root": {  
-    "type": "Property",  
-    "value": false  
-  },  
-  "machineModelParent": {  
-    "type": "Relationship",  
-    "object": "urn:ngsi-ld:MachineModel:4146335f-839f-4ff9-a575-6b4e6232b734"  
-  },  
-  "machineModelChildren": {  
-    "type": "Relationship",  
-    "object": [  
-      "urn:ngsi-ld:MachineModel:a74fcf24-58fa-11e8-ae3e-df1abd78f83f",  
-      "urn:ngsi-ld:MachineModel:b29330f6-58fa-11e8-93b5-1379ded6eef6"  
-    ]  
-  },  
-  "processDescription": {  
-    "type": "Property",  
-    "value": "Industrial printer used to mass print t-shirts"  
-  },  
-  "standardOperations": {  
-    "type": "Property",  
-    "value": [  
-      "print"  
-    ]  
-  }  
+    "@context": [  
+        "https://smartdatamodels.github.io/dataModel.Transportation/context.jsonld",  
+        "https://raw.githubusercontent.com/smart-data-models/dataModel.ManufacturingMachine/master/context.jsonld"  
+    ],  
+    "id": "urn:ngsi-ld:MachineModel:e01f13d1-fea4-4cc4-92c9-0d9fadb2c509",  
+    "type": "ManufacturingMachineModel",  
+    "source": {  
+        "type": "Property",  
+        "value": "https://source.example.com"  
+    },  
+    "dataProvider": {  
+        "type": "Property",  
+        "value": "https://provider.example.com"  
+    },  
+    "name": {  
+        "type": "Property",  
+        "value": "CA1256b"  
+    },  
+    "documentation": {  
+        "type": "Property",  
+        "value": "https://example.com"  
+    },  
+    "description": {  
+        "type": "Property",  
+        "value": "Machine to screen print t-shirts"  
+    },  
+    "manufacturerName": {  
+        "type": "Property",  
+        "value": "ScreenOPrint, Inc."  
+    },  
+    "brandName": {  
+        "type": "Property",  
+        "value": "QuickT"  
+    },  
+    "version": {  
+        "type": "Property",  
+        "value": "v1"  
+    },  
+    "manufacturingMachineType": {  
+        "type": "Property",  
+        "value": [  
+            "2dPrinter"  
+        ]  
+    },  
+    "root": {  
+        "type": "Property",  
+        "value": false  
+    },  
+    "machineModelParent": {  
+        "type": "Relationship",  
+        "object": "urn:ngsi-ld:MachineModel:4146335f-839f-4ff9-a575-6b4e6232b734"  
+    },  
+    "machineModelChildren": {  
+        "type": "Relationship",  
+        "object": [  
+            "urn:ngsi-ld:MachineModel:a74fcf24-58fa-11e8-ae3e-df1abd78f83f",  
+            "urn:ngsi-ld:MachineModel:b29330f6-58fa-11e8-93b5-1379ded6eef6"  
+        ]  
+    },  
+    "processDescription": {  
+        "type": "Property",  
+        "value": "Industrial printer used to mass print t-shirts"  
+    },  
+    "standardOperations": {  
+        "type": "Property",  
+        "value": [  
+            "print"  
+        ]  
+    }  
 }  
 ```  
-Consulte [FAQ 10](https://smartdatamodels.org/index.php/faqs/) para obtener una respuesta sobre cómo tratar las unidades de magnitud
+</details><!-- /80-Examples -->  
+<!-- 90-FooterNotes -->  
+<!-- /90-FooterNotes -->  
+<!-- 95-Units -->  
+Consulte [FAQ 10](https://smartdatamodels.org/index.php/faqs/) para obtener una respuesta sobre cómo tratar las unidades de magnitud  
+<!-- /95-Units -->  
+<!-- 97-LastFooter -->  
+---  
+[Smart Data Models](https://smartdatamodels.org) +++ [Contribution Manual](https://bit.ly/contribution_manual) +++ [About](https://bit.ly/Introduction_SDM)<!-- /97-LastFooter -->  
