@@ -1,23 +1,36 @@
-Entità: ProduzioneMacchina  
-==========================  
+<!-- 10-Header -->  
+[![Smart Data Models](https://smartdatamodels.org/wp-content/uploads/2022/01/SmartDataModels_logo.png "Logo")](https://smartdatamodels.org)  
+Entità: ManufacturingMachine  
+============================<!-- /10-Header -->  
+<!-- 15-License -->  
 [Licenza aperta](https://github.com/smart-data-models//dataModel.ManufacturingMachine/blob/master/ManufacturingMachine/LICENSE.md)  
 [documento generato automaticamente](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
+<!-- /15-License -->  
+<!-- 20-Description -->  
 Descrizione globale: **Descrizione di una macchina generica**  
 versione: 0.0.1  
+<!-- /20-Description -->  
+<!-- 30-PropertiesList -->  
 
 ## Elenco delle proprietà  
 
-- `address`: L'indirizzo postale  - `alternateName`: Un nome alternativo per questa voce  - `areaServed`: L'area geografica in cui viene fornito un servizio o un articolo offerto  - `assetIdentifier`: Un identificatore di asset (ad esempio, il numero dell'etichetta dell'asset) assegnato dal proprietario.  - `batteryLevel`: Livello della batteria. Deve essere uguale a: 1.0 quando la carica della batteria è piena. 0.0 Quando la carica della batteria è vuota. Nullo quando non può essere determinato.  - `building`: Riferimento all'istanza dell'entità edificio in cui questa macchina è installata  - `countryOfManufacture`: Il paese in cui questa macchina è stata fabbricata.  - `current`: La corrente di alimentazione nominale richiesta (alla tensione di alimentazione nominale), in ampere  - `dataProvider`: Una sequenza di caratteri che identifica il fornitore dell'entità di dati armonizzata.  - `dateCreated`: Timestamp di creazione dell'entità. Questo sarà di solito assegnato dalla piattaforma di archiviazione.  - `dateModified`: Timestamp dell'ultima modifica dell'entità. Questo sarà di solito assegnato dalla piattaforma di archiviazione.  - `description`: Una descrizione di questo articolo  - `factory`: Il nome/codice della fabbrica che produce questa macchina.  - `firmwareVersion`: La versione del firmware (specifica del produttore) di questa macchina.  - `firstUsedAt`: Indica la data/ora in cui la macchina è stata utilizzata per la prima volta (nominalmente in UTC).  - `hardwareVersion`: La versione hardware (specifica del produttore) di questa macchina.  - `id`: Identificatore unico dell'entità  - `installationNotes`: Note relative all'installazione di questa macchina.  - `installedAt`: Indica la data/ora in cui la macchina è stata installata (nominalmente in UTC).  - `location`: Riferimento Geojson all'elemento. Può essere Point, LineString, Polygon, MultiPoint, MultiLineString o MultiPolygon  - `machineModel`: Un riferimento al modello di macchina associato per questa macchina.  - `machineOwner`: Riferimento al proprietario o ai proprietari della macchina come persona o organizzazione Schema.org.  - `manufacturedAt`: Indica la data/ora in cui la macchina è stata prodotta (nominalmente in UTC).  - `name`: Il nome di questo articolo.  - `online`: Lo stato di comunicazione di questa macchina. Una rappresentazione logica di Offline (falso) o Online (vero).  - `osVersion`: La versione del sistema operativo (specifica del produttore) di questa macchina  - `owner`: Una lista contenente una sequenza di caratteri codificata in JSON che si riferisce agli ID unici dei proprietari  - `power`: La potenza nominale assorbita della macchina in kW  - `rotationalSpeed`:  	La massima velocità di rotazione in rpm (per macchine come trapani, torni)  - `seeAlso`: elenco di uri che puntano a risorse aggiuntive sull'elemento  - `serialNumber`: Il numero di serie assegnato dal produttore.  - `softwareVersion`: La versione software (specifica del produttore) di questa macchina.  - `source`: Una sequenza di caratteri che dà la fonte originale dei dati dell'entità come URL. Si raccomanda di essere il nome di dominio completamente qualificato del fornitore di origine, o l'URL dell'oggetto di origine.  - `status`: Codice o descrizione dello stato della macchina formattato in testo (corrente). Dovrebbe essere il codice di stato specifico del produttore o della macchina generato dalla macchina.  - `subscriptionService`: Riferimento agli abbonamenti di servizio relativi a questa macchina, ad esempio forniture di energia, Internet Service Provider ecc, manutenzione  - `supplierName`: Il nome del fornitore di questa macchina.  - `supportedProtocol`: Protocollo(i) o reti supportate.  - `type`: Tipo di entità NGSI. Deve essere Macchina.  - `voltage`: La tensione di alimentazione nominale richiesta, in volt    
+<sup><sub>[*] Se non c'è un tipo in un attributo è perché potrebbe avere diversi tipi o diversi formati/modelli</sub></sup>.  
+- `address[object]`: L'indirizzo postale  . Model: [https://schema.org/address](https://schema.org/address)- `alternateName[string]`: Un nome alternativo per questa voce  - `areaServed[string]`: L'area geografica in cui viene fornito il servizio o l'articolo offerto.  . Model: [https://schema.org/Text](https://schema.org/Text)- `assetIdentifier[string]`: Un identificativo dell'asset (ad esempio, il numero di etichetta dell'asset) assegnato dal proprietario.  . Model: [https://schema.org/Text](https://schema.org/Text)- `batteryLevel[number]`: Livello della batteria. Deve essere uguale a: 1,0 Quando la carica della batteria è completa. 0,0 Quando la carica della batteria è esaurita. Nullo se non può essere determinato.  . Model: [https://schema.org/Number](https://schema.org/Number)- `building[*]`: Riferimento all'istanza dell'entità dell'edificio in cui è installata la macchina.  - `countryOfManufacture[string]`: Il Paese in cui è stata prodotta la macchina.  . Model: [https://schema.org/Text](https://schema.org/Text)- `current[number]`: La corrente di alimentazione nominale richiesta (alla tensione di alimentazione nominale), in ampere  . Model: [https://schema.org/Number](https://schema.org/Number)- `dataProvider[string]`: Una sequenza di caratteri che identifica il fornitore dell'entità di dati armonizzata.  - `dateCreated[string]`: Timestamp di creazione dell'entità. Di solito viene assegnato dalla piattaforma di archiviazione.  - `dateModified[string]`: Timestamp dell'ultima modifica dell'entità. Di solito viene assegnato dalla piattaforma di archiviazione.  - `description[string]`: Descrizione dell'articolo  - `factory[string]`: Il nome/codice della fabbrica che produce questa macchina.  . Model: [https://schema.org/Text](https://schema.org/Text)- `firmwareVersion[string]`: La versione del firmware (specifica del produttore) di questa macchina.  . Model: [https://schema.org/Text](https://schema.org/Text)- `firstUsedAt[string]`: Indica la data e l'ora in cui la macchina è stata utilizzata per la prima volta (nominalmente in UTC).  . Model: [https://schema.org/Text](https://schema.org/Text)- `hardwareVersion[string]`: La versione hardware (specifica del produttore) di questa macchina.  . Model: [https://schema.org/Text](https://schema.org/Text)- `id[*]`: Identificatore univoco dell'entità  - `installationNotes[object]`: Note relative all'installazione di questa macchina.  . Model: [https://schema.org/Text](https://schema.org/Text)- `installedAt[string]`: Indica la data/ora in cui è stata installata la macchina (nominalmente in UTC).  . Model: [https://schema.org/Text](https://schema.org/Text)- `location[*]`: Riferimento Geojson all'elemento. Può essere un punto, una stringa di linea, un poligono, un multi-punto, una stringa di linea o un poligono multiplo.  - `machineModel[*]`: Un riferimento al Modello di macchina associato a questa macchina.  - `machineOwner[array]`: Riferimento al proprietario o ai proprietari della macchina come persona o organizzazione Schema.org.  - `manufacturedAt[string]`: Indica la data e l'ora in cui la macchina è stata prodotta (nominalmente in UTC).  . Model: [https://schema.org/Text](https://schema.org/Text)- `name[string]`: Il nome di questo elemento.  - `online[boolean]`: Lo stato di comunicazione di questa macchina. Una rappresentazione logica di Offline (falso) o Online (vero).  . Model: [https://schema.org/Boolean](https://schema.org/Boolean)- `osVersion[string]`: La versione del sistema operativo (specifica del produttore) di questa macchina  . Model: [https://schema.org/Text](https://schema.org/Text)- `owner[array]`: Un elenco contenente una sequenza di caratteri codificata JSON che fa riferimento agli ID univoci dei proprietari.  - `power[number]`: Potenza nominale assorbita dalla macchina, espressa in kW.  . Model: [https://schema.org/Number](https://schema.org/Number)- `rotationalSpeed[number]`:  	La velocità massima di rotazione in giri/minuto (per macchine come trapani e torni)  . Model: [https://schema.org/Number](https://schema.org/Number)- `seeAlso[*]`: elenco di uri che puntano a risorse aggiuntive sull'elemento  - `serialNumber[string]`: Il numero di serie assegnato dal produttore.  . Model: [https://schema.org/Text](https://schema.org/Text)- `softwareVersion[string]`: La versione software (specifica del produttore) di questa macchina.  . Model: [https://schema.org/Text](https://schema.org/Text)- `source[string]`: Una sequenza di caratteri che indica la fonte originale dei dati dell'entità come URL. Si consiglia di utilizzare il nome di dominio completamente qualificato del provider di origine o l'URL dell'oggetto di origine.  - `status[string]`: Codice di stato della macchina (corrente) formattato in testo o descrizione. Si prevede che sia il codice di stato specifico del produttore o della macchina generato dalla macchina.  . Model: [https://schema.org/Text](https://schema.org/Text)- `subscriptionService[array]`: Riferimento agli abbonamenti ai servizi relativi a questa macchina, ad esempio forniture di energia, fornitori di servizi Internet, ecc.  - `supplierName[string]`: Il nome del fornitore di questa macchina.  . Model: [https://schema.org/Text](https://schema.org/Text)- `supportedProtocol[array]`: Protocolli o reti supportati.  . Model: [https://schema.org/Text](https://schema.org/Text)- `type[string]`: Tipo di entità NGSI. Deve essere ManufacturingMachine.  - `voltage[number]`: La tensione di alimentazione nominale richiesta, espressa in volt  . Model: [https://schema.org/Number](https://schema.org/Number)<!-- /30-PropertiesList -->  
+<!-- 35-RequiredProperties -->  
 Proprietà richieste  
-- `id`  - `type`    
-Questo modello di dati proviene dal progetto originale GSMA IoT, https://www.gsma.com/iot/iot-big-data/. Ci sono alcuni adattamenti minori per soddisfare i requisiti dei modelli di dati intelligenti.  
-## Descrizione del modello di dati delle proprietà  
+- `id`  - `type`  <!-- /35-RequiredProperties -->  
+<!-- 40-RequiredProperties -->  
+Questo modello di dati deriva dal progetto originale GSMA IoT, https://www.gsma.com/iot/iot-big-data/. Sono stati apportati alcuni piccoli adattamenti per soddisfare i requisiti dei modelli di dati intelligenti.  
+<!-- /40-RequiredProperties -->  
+<!-- 50-DataModelHeader -->  
+## Modello di dati descrizione delle proprietà  
 Ordinati in ordine alfabetico (clicca per i dettagli)  
+<!-- /50-DataModelHeader -->  
+<!-- 60-ModelYaml -->  
 <details><summary><strong>full yaml details</strong></summary>    
 ```yaml  
 ManufacturingMachine:    
   description: 'Description of a generic machine'    
-  modelTags: GSMA    
   properties:    
     address:    
       description: 'The mailing address'    
@@ -466,12 +479,11 @@ ManufacturingMachine:
         model: https://schema.org/Text    
         type: Property    
     type:    
-      description: 'NGSI entity type. It has to be Machine.'    
+      description: 'NGSI entity type. It has to be ManufacturingMachine.'    
       enum:    
         - ManufacturingMachine    
       type: string    
       x-ngsi:    
-        model: https://schema.org/Text    
         type: Property    
     voltage:    
       description: 'The nominal required supply voltage, in volts'    
@@ -484,12 +496,22 @@ ManufacturingMachine:
     - id    
     - type    
   type: object    
-  version: 0.0.1    
+  x-derived-from: ""    
+  x-disclaimer: 'Redistribution and use in source and binary forms, with or without modification, are permitted  provided that the license conditions are met. Copyleft (c) 2021 Contributors to Smart Data Models Program'    
+  x-license-url: https://github.com/smart-data-models/dataModel.ManufacturingMachine/blob/master/ManufacturingMachine/LICENSE.md    
+  x-model-schema: https://smart-data-models.github.io/dataModel.ManufacturingMachine/ManufacturingMachine/schema.json    
+  x-model-tags: GSMA    
+  x-version: 0.0.1    
 ```  
 </details>    
-## Esempio di payloads  
-#### ManufacturingMachine NGSI-v2 valori chiave Esempio  
-Ecco un esempio di una ManufacturingMachine in formato JSON-LD come key-values. Questo è compatibile con NGSI-v2 quando si usa `options=keyValues` e restituisce i dati di contesto di una singola entità.  
+<!-- /60-ModelYaml -->  
+<!-- 70-MiddleNotes -->  
+<!-- /70-MiddleNotes -->  
+<!-- 80-Examples -->  
+## Esempi di payload  
+#### ManufacturingMachine NGSI-v2 valori-chiave Esempio  
+Ecco un esempio di ManufacturingMachine in formato JSON-LD come valori-chiave. Questo è compatibile con NGSI-v2 quando si usa `options=keyValues` e restituisce i dati di contesto di una singola entità.  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
   "assetIdentifier": "ID12345",  
@@ -544,8 +566,10 @@ ManufacturingMachine:
   "voltage": 220  
 }  
 ```  
+</details>  
 #### ManufacturingMachine NGSI-v2 normalizzato Esempio  
-Ecco un esempio di una ManufacturingMachine in formato JSON-LD normalizzato. Questo è compatibile con NGSI-v2 quando non usa opzioni e restituisce i dati di contesto di una singola entità.  
+Ecco un esempio di ManufacturingMachine in formato JSON-LD normalizzato. Questo è compatibile con NGSI-v2 quando non si utilizzano opzioni e restituisce i dati di contesto di una singola entità.  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
   "id": "urn:ngsi-ld:Machine:9166c528-9c98-4579-a5d3-8068aea5d6c0",  
@@ -687,232 +711,246 @@ ManufacturingMachine:
   }  
 }  
 ```  
+</details>  
 #### ManufacturingMachine NGSI-LD valori chiave Esempio  
-Ecco un esempio di una ManufacturingMachine in formato JSON-LD come key-values. Questo è compatibile con NGSI-LD quando si usa `options=keyValues` e restituisce i dati di contesto di una singola entità.  
+Ecco un esempio di ManufacturingMachine in formato JSON-LD come valori-chiave. Questo è compatibile con NGSI-LD quando si usa `options=keyValues` e restituisce i dati di contesto di una singola entità.  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
-  "@context": [  
-    "https://smartdatamodels.org/context.jsonld",  
-    "https://raw.githubusercontent.com/GSMADeveloper/NGSI-LD-Entities/master/examples/Machine-context.jsonld"  
-  ],  
-  "assetIdentifier": "ID12345",  
-  "batteryLevel": 0.7,  
-  "building": "urn:ngsi-ld:Building:8683b757-649c-49e0-ac89-ad392c9a0d0c",  
-  "countryOfManufacture": "UK",  
-  "current": 20,  
-  "dataProvider": "https://provider.example.com",  
-  "description": "Industrial machine to create plastic bottles",  
-  "factory": "N9",  
-  "firmwareVersion": "A.10",  
-  "firstUsedAt": "2017-05-04T10:18:16Z",  
-  "hardwareVersion": "2.1",  
-  "id": "urn:ngsi-ld:Machine:9166c528-9c98-4579-a5d3-8068aea5d6c0",  
-  "installationNotes": {  
-    "docUri": "http://example.com/sample/machine-instructions.pdf",  
-    "value": "Installed according to manufacturer instructions."  
-  },  
-  "installedAt": "2017-05-04T10:18:16Z",  
-  "location": {  
-    "coordinates": [  
-      -104.99404,  
-      39.75621  
+    "@context": [  
+        "https://smartdatamodels.org/context.jsonld",  
+        "https://raw.githubusercontent.com/GSMADeveloper/NGSI-LD-Entities/master/examples/Machine-context.jsonld",  
+        "https://raw.githubusercontent.com/smart-data-models/dataModel.ManufacturingMachine/master/context.jsonld"  
     ],  
-    "type": "Point"  
-  },  
-  "machineModel": "urn:ngsi-ld:MachineModel:00b42701-43e1-482d-aa7a-e2956cfd69c3",  
-  "manufacturedAt": "2017-05-04T10:18:16Z",  
-  "online": true,  
-  "osVersion": "10A",  
-  "machineOwner": [  
-    "urn:ngsi-ld:Person:a498182c-47c0-11e8-be4e-2c4d549a1ab2",  
-    "urn:ngsi-ld:Organization:abb20712-47c0-11e8-8742-2c4d549a1ab2"  
-  ],  
-  "power": 4.4,  
-  "rotationalSpeed": 10,  
-  "serialNumber": "X9923456789F",  
-  "softwareVersion": "8.5.C",  
-  "source": "https://source.example.com",  
-  "status": "SC1001",  
-  "subscriptionService": [  
-      "urn:ngsi-ld:SubscriptionService:0d95b03c-47c1-11e8-99fd-2c4d549a1ab2",  
-      "urn:ngsi-ld:SubscriptionService:1527d0fa-47c1-11e8-8fb1-2c4d549a1ab2"  
+    "assetIdentifier": "ID12345",  
+    "batteryLevel": 0.7,  
+    "building": "urn:ngsi-ld:Building:8683b757-649c-49e0-ac89-ad392c9a0d0c",  
+    "countryOfManufacture": "UK",  
+    "current": 20,  
+    "dataProvider": "https://provider.example.com",  
+    "description": "Industrial machine to create plastic bottles",  
+    "factory": "N9",  
+    "firmwareVersion": "A.10",  
+    "firstUsedAt": "2017-05-04T10:18:16Z",  
+    "hardwareVersion": "2.1",  
+    "id": "urn:ngsi-ld:Machine:9166c528-9c98-4579-a5d3-8068aea5d6c0",  
+    "installationNotes": {  
+        "docUri": "http://example.com/sample/machine-instructions.pdf",  
+        "value": "Installed according to manufacturer instructions."  
+    },  
+    "installedAt": "2017-05-04T10:18:16Z",  
+    "location": {  
+        "coordinates": [  
+            -104.99404,  
+            39.75621  
+        ],  
+        "type": "Point"  
+    },  
+    "machineModel": "urn:ngsi-ld:MachineModel:00b42701-43e1-482d-aa7a-e2956cfd69c3",  
+    "manufacturedAt": "2017-05-04T10:18:16Z",  
+    "online": true,  
+    "osVersion": "10A",  
+    "machineOwner": [  
+        "urn:ngsi-ld:Person:a498182c-47c0-11e8-be4e-2c4d549a1ab2",  
+        "urn:ngsi-ld:Organization:abb20712-47c0-11e8-8742-2c4d549a1ab2"  
     ],  
-  "supplierName": "ACME NorthEast Inc.",  
-  "supportedProtocol": [  
-    "HTTP",  
-    "HTTPS",  
-    "FTP"  
-  ],  
-  "type": "ManufacturingMachine",  
-  "voltage": 220  
+    "power": 4.4,  
+    "rotationalSpeed": 10,  
+    "serialNumber": "X9923456789F",  
+    "softwareVersion": "8.5.C",  
+    "source": "https://source.example.com",  
+    "status": "SC1001",  
+    "subscriptionService": [  
+        "urn:ngsi-ld:SubscriptionService:0d95b03c-47c1-11e8-99fd-2c4d549a1ab2",  
+        "urn:ngsi-ld:SubscriptionService:1527d0fa-47c1-11e8-8fb1-2c4d549a1ab2"  
+    ],  
+    "supplierName": "ACME NorthEast Inc.",  
+    "supportedProtocol": [  
+        "HTTP",  
+        "HTTPS",  
+        "FTP"  
+    ],  
+    "type": "ManufacturingMachine",  
+    "voltage": 220  
 }  
 ```  
+</details>  
 #### ManufacturingMachine NGSI-LD normalizzato Esempio  
-Ecco un esempio di una ManufacturingMachine in formato JSON-LD normalizzato. Questo è compatibile con NGSI-LD quando non usa opzioni e restituisce i dati di contesto di una singola entità.  
+Ecco un esempio di ManufacturingMachine in formato JSON-LD normalizzato. Questo è compatibile con NGSI-LD quando non si utilizzano opzioni e restituisce i dati di contesto di una singola entità.  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
-  "@context": [  
-    "https://smartdatamodels.org/context.jsonld",  
-    "https://raw.githubusercontent.com/GSMADeveloper/NGSI-LD-Entities/master/examples/Machine-context.jsonld"  
-  ],  
-  "id": "urn:ngsi-ld:Machine:9166c528-9c98-4579-a5d3-8068aea5d6c0",  
-  "type": "ManufacturingMachine",  
-  "source": {  
-    "type": "Property",  
-    "value": "https://source.example.com"  
-  },  
-  "dataProvider": {  
-    "type": "Property",  
-    "value": "https://provider.example.com"  
-  },  
-  "machineModel": {  
-    "type": "Relationship",  
-    "object": "urn:ngsi-ld:MachineModel:00b42701-43e1-482d-aa7a-e2956cfd69c3"  
-  },  
-  "serialNumber": {  
-    "type": "Property",  
-    "value": "X9923456789F"  
-  },  
-  "assetIdentifier": {  
-    "type": "Property",  
-    "value": "ID12345"  
-  },  
-  "supplierName": {  
-    "type": "Property",  
-    "value": "ACME NorthEast Inc."  
-  },  
-  "countryOfManufacture": {  
-    "type": "Property",  
-    "value": "UK"  
-  },  
-  "factory": {  
-    "type": "Property",  
-    "value": "N9"  
-  },  
-  "firstUsedAt": {  
-    "type": "Property",  
-    "value": {  
-      "@type": "DateTime",  
-      "@value": "2017-05-04T10:18:16Z"  
-    }  
-  },  
-  "installedAt": {  
-    "type": "Property",  
-    "value": {  
-      "@type": "DateTime",  
-      "@value": "2017-05-04T10:18:16Z"  
-    }  
-  },  
-  "manufacturedAt": {  
-    "type": "Property",  
-    "value": {  
-      "@type": "DateTime",  
-      "@value": "2017-05-04T10:18:16Z"  
-    }  
-  },  
-  "description": {  
-    "type": "Property",  
-    "value": "Industrial machine to create plastic bottles"  
-  },  
-  "owner": {  
-    "type": "Relationship",  
-    "object": [  
-      "urn:ngsi-ld:Person:a498182c-47c0-11e8-be4e-2c4d549a1ab2",  
-      "urn:ngsi-ld:Organization:abb20712-47c0-11e8-8742-2c4d549a1ab2"  
-    ]  
-  },  
-  "hardwareVersion": {  
-    "type": "Property",  
-    "value": "2.1"  
-  },  
-  "firmwareVersion": {  
-    "type": "Property",  
-    "value": "A.10"  
-  },  
-  "softwareVersion": {  
-    "type": "Property",  
-    "value": "8.5.C"  
-  },  
-  "osVersion": {  
-    "type": "Property",  
-    "value": "10A"  
-  },  
-  "supportedProtocol": {  
-    "type": "Property",  
-    "value": [  
-      "HTTP",  
-      "HTTPS",  
-      "FTP"  
+    "@context": [  
+        "https://smartdatamodels.org/context.jsonld",  
+        "https://raw.githubusercontent.com/GSMADeveloper/NGSI-LD-Entities/master/examples/Machine-context.jsonld",  
+        "https://raw.githubusercontent.com/smart-data-models/dataModel.ManufacturingMachine/master/context.jsonld"  
     ],  
-    "observedAt": "2017-05-04T12:30:00Z"  
-  },  
-  "building": {  
-    "type": "Relationship",  
-    "object": "urn:ngsi-ld:Building:8683b757-649c-49e0-ac89-ad392c9a0d0c"  
-  },  
-  "location": {  
-    "type": "Geoproperty",  
-    "value": {  
-      "type": "Point",  
-      "coordinates": [  
-        -104.99404,  
-        39.75621  
-      ]  
+    "id": "urn:ngsi-ld:Machine:9166c528-9c98-4579-a5d3-8068aea5d6c0",  
+    "type": "ManufacturingMachine",  
+    "source": {  
+        "type": "Property",  
+        "value": "https://source.example.com"  
+    },  
+    "dataProvider": {  
+        "type": "Property",  
+        "value": "https://provider.example.com"  
+    },  
+    "machineModel": {  
+        "type": "Relationship",  
+        "object": "urn:ngsi-ld:MachineModel:00b42701-43e1-482d-aa7a-e2956cfd69c3"  
+    },  
+    "serialNumber": {  
+        "type": "Property",  
+        "value": "X9923456789F"  
+    },  
+    "assetIdentifier": {  
+        "type": "Property",  
+        "value": "ID12345"  
+    },  
+    "supplierName": {  
+        "type": "Property",  
+        "value": "ACME NorthEast Inc."  
+    },  
+    "countryOfManufacture": {  
+        "type": "Property",  
+        "value": "UK"  
+    },  
+    "factory": {  
+        "type": "Property",  
+        "value": "N9"  
+    },  
+    "firstUsedAt": {  
+        "type": "Property",  
+        "value": {  
+            "@type": "DateTime",  
+            "@value": "2017-05-04T10:18:16Z"  
+        }  
+    },  
+    "installedAt": {  
+        "type": "Property",  
+        "value": {  
+            "@type": "DateTime",  
+            "@value": "2017-05-04T10:18:16Z"  
+        }  
+    },  
+    "manufacturedAt": {  
+        "type": "Property",  
+        "value": {  
+            "@type": "DateTime",  
+            "@value": "2017-05-04T10:18:16Z"  
+        }  
+    },  
+    "description": {  
+        "type": "Property",  
+        "value": "Industrial machine to create plastic bottles"  
+    },  
+    "owner": {  
+        "type": "Relationship",  
+        "object": [  
+            "urn:ngsi-ld:Person:a498182c-47c0-11e8-be4e-2c4d549a1ab2",  
+            "urn:ngsi-ld:Organization:abb20712-47c0-11e8-8742-2c4d549a1ab2"  
+        ]  
+    },  
+    "hardwareVersion": {  
+        "type": "Property",  
+        "value": "2.1"  
+    },  
+    "firmwareVersion": {  
+        "type": "Property",  
+        "value": "A.10"  
+    },  
+    "softwareVersion": {  
+        "type": "Property",  
+        "value": "8.5.C"  
+    },  
+    "osVersion": {  
+        "type": "Property",  
+        "value": "10A"  
+    },  
+    "supportedProtocol": {  
+        "type": "Property",  
+        "value": [  
+            "HTTP",  
+            "HTTPS",  
+            "FTP"  
+        ],  
+        "observedAt": "2017-05-04T12:30:00Z"  
+    },  
+    "building": {  
+        "type": "Relationship",  
+        "object": "urn:ngsi-ld:Building:8683b757-649c-49e0-ac89-ad392c9a0d0c"  
+    },  
+    "location": {  
+        "type": "Geoproperty",  
+        "value": {  
+            "type": "Point",  
+            "coordinates": [  
+                -104.99404,  
+                39.75621  
+            ]  
+        }  
+    },  
+    "subscriptionService": {  
+        "type": "Relationship",  
+        "object": [  
+            "urn:ngsi-ld:SubscriptionService:0d95b03c-47c1-11e8-99fd-2c4d549a1ab2",  
+            "urn:ngsi-ld:SubscriptionService:1527d0fa-47c1-11e8-8fb1-2c4d549a1ab2"  
+        ]  
+    },  
+    "online": {  
+        "type": "Property",  
+        "value": true,  
+        "observedAt": "2017-05-04T12:30:00Z"  
+    },  
+    "status": {  
+        "type": "Property",  
+        "value": "SC1001",  
+        "observedAt": "2017-05-04T12:30:00Z"  
+    },  
+    "batteryLevel": {  
+        "type": "Property",  
+        "value": 0.7,  
+        "observedAt": "2017-05-04T12:30:00Z"  
+    },  
+    "installationNotes": {  
+        "type": "Property",  
+        "value": {  
+            "value": "Installed according to manufacturer instructions.",  
+            "docUri": "http://example.com/sample/machine-instructions.pdf"  
+        }  
+    },  
+    "voltage": {  
+        "type": "Property",  
+        "value": 220,  
+        "unitCode": "VLT",  
+        "observedAt": "2016-08-08T10:18:16Z"  
+    },  
+    "current": {  
+        "type": "Property",  
+        "value": 20,  
+        "unitCode": "AMP",  
+        "observedAt": "2016-08-08T10:18:16Z"  
+    },  
+    "power": {  
+        "type": "Property",  
+        "value": 4.4,  
+        "unitCode": "KWT",  
+        "observedAt": "2016-08-08T10:18:16Z"  
+    },  
+    "rotationalSpeed": {  
+        "type": "Property",  
+        "value": 10,  
+        "unitCode": "RPM",  
+        "observedAt": "2016-08-08T10:18:16Z"  
     }  
-  },  
-  "subscriptionService": {  
-    "type": "Relationship",  
-    "object": [  
-      "urn:ngsi-ld:SubscriptionService:0d95b03c-47c1-11e8-99fd-2c4d549a1ab2",  
-      "urn:ngsi-ld:SubscriptionService:1527d0fa-47c1-11e8-8fb1-2c4d549a1ab2"  
-    ]  
-  },  
-  "online": {  
-    "type": "Property",  
-    "value": true,  
-    "observedAt": "2017-05-04T12:30:00Z"  
-  },  
-  "status": {  
-    "type": "Property",  
-    "value": "SC1001",  
-    "observedAt": "2017-05-04T12:30:00Z"  
-  },  
-  "batteryLevel": {  
-    "type": "Property",  
-    "value": 0.7,  
-    "observedAt": "2017-05-04T12:30:00Z"  
-  },  
-  "installationNotes": {  
-    "type": "Property",  
-    "value": {  
-      "value": "Installed according to manufacturer instructions.",  
-      "docUri": "http://example.com/sample/machine-instructions.pdf"  
-    }  
-  },  
-  "voltage": {  
-    "type": "Property",  
-    "value": 220,  
-    "unitCode": "VLT",  
-    "observedAt": "2016-08-08T10:18:16Z"  
-  },  
-  "current": {  
-    "type": "Property",  
-    "value": 20,  
-    "unitCode": "AMP",  
-    "observedAt": "2016-08-08T10:18:16Z"  
-  },  
-  "power": {  
-    "type": "Property",  
-    "value": 4.4,  
-    "unitCode": "KWT",  
-    "observedAt": "2016-08-08T10:18:16Z"  
-  },  
-  "rotationalSpeed": {  
-    "type": "Property",  
-    "value": 10,  
-    "unitCode": "RPM",  
-    "observedAt": "2016-08-08T10:18:16Z"  
-  }  
 }  
 ```  
-Vedere [FAQ 10](https://smartdatamodels.org/index.php/faqs/) per avere una risposta su come trattare le unità di grandezza
+</details><!-- /80-Examples -->  
+<!-- 90-FooterNotes -->  
+<!-- /90-FooterNotes -->  
+<!-- 95-Units -->  
+Vedere [FAQ 10](https://smartdatamodels.org/index.php/faqs/) per ottenere una risposta su come gestire le unità di grandezza.  
+<!-- /95-Units -->  
+<!-- 97-LastFooter -->  
+---  
+[Smart Data Models](https://smartdatamodels.org) +++ [Contribution Manual](https://bit.ly/contribution_manual) +++ [About](https://bit.ly/Introduction_SDM)<!-- /97-LastFooter -->  
