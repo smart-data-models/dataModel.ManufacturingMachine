@@ -1,17 +1,32 @@
-Entité : ManufacturingMachineOperation  
-======================================  
+<!-- 10-Header -->  
+[![Smart Data Models](https://smartdatamodels.org/wp-content/uploads/2022/01/SmartDataModels_logo.png "Logo")](https://smartdatamodels.org)  
+Entité : ManufacturingMachineOperation  
+======================================<!-- /10-Header -->  
+<!-- 15-License -->  
 [Licence ouverte] (https://github.com/smart-data-models//dataModel.ManufacturingMachine/blob/master/ManufacturingMachineOperation/LICENSE.md)  
 [document généré automatiquement] (https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
+<!-- /15-License -->  
+<!-- 20-Description -->  
 Description globale : **Cette entité contient une description harmonisée d'une opération générique de la machine. Cette entité est principalement associée au segment industriel et aux applications IoT connexes. Chaque instance de MachineOperation sera liée à une instance de machine spécifique**.  
+version : 0.0.2  
+<!-- /20-Description -->  
+<!-- 30-PropertiesList -->  
 
 ## Liste des propriétés  
 
-- `address`: L'adresse postale  - `alternateName`: Un nom alternatif pour cet élément  - `areaServed`: La zone géographique où un service ou un article offert est fourni  - `commandSequence`: La séquence de commande exécutée/ demandée pour la machine dans un format de représentation pertinent pour la machine.  - `dataProvider`: Une séquence de caractères identifiant le fournisseur de l'entité de données harmonisées.  - `dateCreated`: Horodatage de la création de l'entité. Celui-ci sera généralement attribué par la plateforme de stockage.  - `dateModified`: Horodatage de la dernière modification de l'entité. Il sera généralement attribué par la plateforme de stockage.  - `description`: Une description de cet article  - `endedAt`: Horodatage de la fin effective de l'opération.  - `id`: Identifiant unique de l'entité  - `location`: Référence Geojson à l'élément. Il peut s'agir d'un point, d'une ligne, d'un polygone, d'un point multiple, d'une ligne multiple ou d'un polygone multiple.  - `machine`: Une référence à la machine associée pour cette opération de machine.  - `name`: Le nom de cet élément.  - `operationOutput`: Une propriété personnalisée décrivant les données de sortie de l'opération. Les propriétés du schéma de la sortie dépendent fortement du modèle de la machine.  - `operationType`: Définit le type d'opération effectuée/ demandée. Il s'agira de l'un des types d'opération définis dans une liste spécifique à la machine/modèle de machine, y compris ceux-ci. Enum : 'processus, réglage，maintenance, réparation， panne'. La liste des types d'opération dépend fortement du modèle de machine.  - `operator`: Référence à l'opérateur qui effectue l'opération  - `owner`: Une liste contenant une séquence de caractères codée en JSON référençant les identifiants uniques du ou des propriétaires.  - `plannedEndAt`: La date/heure de fin prévue pour l'opération. Notez qu'il s'agit d'un avis et que l'heure réelle de fin de l'opération peut être antérieure ou postérieure à la fin prévue.  - `plannedStartAt`: La date/heure de début prévue pour l'opération. Notez qu'il s'agit d'un avis et que l'heure réelle de début de l'opération peut être antérieure ou postérieure au début prévu.  - `result`: Le résultat de l'opération. L'un d'entre eux. Enum : 'ok, success, suspended, aborted, failed' (ok, succès, suspendu, interrompu, échoué)  - `seeAlso`: liste d'uri pointant vers des ressources supplémentaires sur l'élément  - `source`: Une séquence de caractères donnant la source originale des données de l'entité sous forme d'URL. Il est recommandé d'utiliser le nom de domaine entièrement qualifié du fournisseur source ou l'URL de l'objet source.  - `startedAt`: Horodatage du début de l'exécution de l'opération.  - `status`: Un choix dans une liste énumérée décrivant l'état. L'un de ces choix. Enum : "planifié, en cours, terminé, programmé, annulé".  - `type`: Identifiant de l'entité NGSI. Il doit être ManufacturingMachineOperation.    
+<sup><sub>[*] S'il n'y a pas de type dans un attribut, c'est parce qu'il pourrait avoir plusieurs types ou différents formats/modèles</sub></sup>.  
+- `address[object]`: L'adresse postale  . Model: [https://schema.org/address](https://schema.org/address)- `alternateName[string]`: Un nom alternatif pour cet élément  - `areaServed[string]`: La zone géographique où un service ou un article offert est fourni  . Model: [https://schema.org/Text](https://schema.org/Text)- `commandSequence[array]`: La séquence de commande exécutée/ demandée pour la machine dans un format de représentation pertinent pour la machine.  - `dataProvider[string]`: Une séquence de caractères identifiant le fournisseur de l'entité de données harmonisées.  - `dateCreated[string]`: Horodatage de la création de l'entité. Celui-ci sera généralement attribué par la plateforme de stockage.  - `dateModified[string]`: Horodatage de la dernière modification de l'entité. Il sera généralement attribué par la plateforme de stockage.  - `description[string]`: Une description de cet article  - `endedAt[string]`: Horodatage de la fin effective de l'opération.  - `id[*]`: Identifiant unique de l'entité  - `location[*]`: Référence Geojson à l'élément. Il peut s'agir d'un point, d'une ligne, d'un polygone, d'un point multiple, d'une ligne multiple ou d'un polygone multiple.  - `machine[*]`: Une référence à la machine associée pour cette opération de machine.  - `name[string]`: Le nom de cet élément.  - `operationOutput[object]`: Une propriété personnalisée décrivant les données de sortie de l'opération. Les propriétés du schéma de la sortie dépendent fortement du modèle de la machine.  - `operationType[array]`: Définit le type d'opération effectuée/ demandée. Il s'agira de l'un des types d'opérations définis dans une liste spécifique à la machine/modèle de machine, y compris ceux-ci. Enum : "processus, réglage，maintenance, réparation， panne". La liste des types d'opération dépend fortement du modèle de machine.  - `operator[*]`: Référence à l'opérateur qui effectue l'opération  - `owner[array]`: Une liste contenant une séquence de caractères codée en JSON référençant les identifiants uniques du ou des propriétaires.  - `plannedEndAt[string]`: La date/heure de fin prévue pour l'opération. Notez qu'il s'agit d'un avis et que l'heure réelle de fin de l'opération peut être antérieure ou postérieure à la fin prévue.  - `plannedStartAt[string]`: La date/heure de début prévue pour l'opération. Notez qu'il s'agit d'un avis et que l'heure réelle de début de l'opération peut être antérieure ou postérieure au début prévu.  - `result[string]`: Le résultat de l'opération. L'un d'entre eux. Enum : 'ok, success, suspended, aborted, failed' (ok, succès, suspendu, interrompu, échoué)  - `seeAlso[*]`: liste d'uri pointant vers des ressources supplémentaires sur l'article  - `source[string]`: Une séquence de caractères donnant la source originale des données de l'entité sous forme d'URL. Il est recommandé d'utiliser le nom de domaine entièrement qualifié du fournisseur source ou l'URL de l'objet source.  - `startedAt[string]`: Horodatage du début de l'exécution de l'opération.  - `status[string]`: Un choix dans une liste énumérée décrivant l'état. L'un de ces choix. Enum : "planifié, en cours, terminé, programmé, annulé".  - `type[string]`: Identifiant de l'entité NGSI. Il doit être ManufacturingMachineOperation.  <!-- /30-PropertiesList -->  
+<!-- 35-RequiredProperties -->  
 Propriétés requises  
-- `id`  - `type`    
+- `id`  - `type`  <!-- /35-RequiredProperties -->  
+<!-- 40-RequiredProperties -->  
 Ce modèle de données est issu du projet original GSMA IoT, https://www.gsma.com/iot/iot-big-data/. Il y a quelques adaptations mineures pour répondre aux exigences des modèles de données intelligents.  
+<!-- /40-RequiredProperties -->  
+<!-- 50-DataModelHeader -->  
 ## Description des propriétés du modèle de données  
 Classés par ordre alphabétique (cliquez pour plus de détails)  
+<!-- /50-DataModelHeader -->  
+<!-- 60-ModelYaml -->  
 <details><summary><strong>full yaml details</strong></summary>    
 ```yaml  
 ManufacturingMachineOperation:    
@@ -386,9 +401,14 @@ ManufacturingMachineOperation:
   x-version: 0.0.2    
 ```  
 </details>    
+<!-- /60-ModelYaml -->  
+<!-- 70-MiddleNotes -->  
+<!-- /70-MiddleNotes -->  
+<!-- 80-Examples -->  
 ## Exemples de charges utiles  
 #### ManufacturingMachineOperation Valeurs-clés NGSI-v2 Exemple  
 Voici un exemple de ManufacturingMachineOperation au format JSON-LD en tant que valeurs-clés. Ceci est compatible avec NGSI-v2 lorsque l'on utilise `options=keyValues` et renvoie les données contextuelles d'une entité individuelle.  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
   "id": "urn:ngsi-ld:MachineOperation:27577638-bd8a-4732-b418-fc8b949a0b0f",  
@@ -419,8 +439,10 @@ ManufacturingMachineOperation:
   }  
 }  
 ```  
+</details>  
 #### ManufacturingMachineOperation NGSI-v2 normalisée Exemple  
 Voici un exemple de ManufacturingMachineOperation au format JSON-LD tel que normalisé. Ceci est compatible avec NGSI-v2 lorsqu'on n'utilise pas d'options et renvoie les données contextuelles d'une entité individuelle.  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
   "id": "urn:ngsi-ld:MachineOperation:27577638-bd8a-4732-b418-fc8b949a0b0f",  
@@ -493,126 +515,142 @@ ManufacturingMachineOperation:
   }  
 }  
 ```  
+</details>  
 #### ManufacturingMachineOperation Valeurs-clés NGSI-LD Exemple  
-Voici un exemple de ManufacturingMachineOperation au format JSON-LD en tant que valeurs-clés. Ceci est compatible avec NGSI-LD quand on utilise `options=keyValues` et renvoie les données contextuelles d'une entité individuelle.  
+Voici un exemple de ManufacturingMachineOperation au format JSON-LD en tant que valeurs-clés. Ceci est compatible avec NGSI-LD lorsque l'on utilise `options=keyValues` et renvoie les données contextuelles d'une entité individuelle.  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
-  "@context": [  
-    "https://smart-data-models.github.io/dataModel.ManufacturingMachine/ManufacturingOperation/context.jsonld"  
-  ],  
-  "id": "urn:ngsi-ld:MachineOperation:27577638-bd8a-4732-b418-fc8b949a0b0f",  
-  "type": "ManufacturingMachineOperation",  
-  "source": "https://source.example.com",  
-  "dataProvider": "https://provider.example.com",  
-  "machine": "urn:ngsi-ld:Machine:2033a7c7-d31b-48e7-91c2-014dc426c29e",  
-  "operationType": [  
-    "process"  
-  ],  
-  "description": "Printing of 1000 T-shirts",  
-  "result": "ok",  
-  "plannedStartAt": "2016-08-22T10:18:16Z",  
-  "plannedEndAt": "2016-08-28T10:18:16Z",  
-  "status": "finished",  
-  "operator": "urn:ngsi-ld:Person:fd6f0070-47d7-11e8-a26c-0784612b9393",  
-  "startedAt": "2016-08-22T10:18:16Z",  
-  "endedAt": "2016-08-28T10:18:16Z",  
-  "commandSequence": [  
-    "Select inks",  
-    "Prepare print masks",  
-    "Print shirts",  
-    "Clean print heads and rollers"  
-  ],  
-  "operationOutput": {  
-    "Units Printed": 1000,  
-    "Faults": 0  
-  }  
+    "@context": [  
+        "https://smart-data-models.github.io/dataModel.ManufacturingMachine/ManufacturingOperation/context.jsonld",  
+        "https://raw.githubusercontent.com/smart-data-models/dataModel.ManufacturingMachine/master/context.jsonld"  
+    ],  
+    "id": "urn:ngsi-ld:MachineOperation:27577638-bd8a-4732-b418-fc8b949a0b0f",  
+    "type": "ManufacturingMachineOperation",  
+    "source": "https://source.example.com",  
+    "dataProvider": "https://provider.example.com",  
+    "machine": "urn:ngsi-ld:Machine:2033a7c7-d31b-48e7-91c2-014dc426c29e",  
+    "operationType": [  
+        "process"  
+    ],  
+    "description": "Printing of 1000 T-shirts",  
+    "result": "ok",  
+    "plannedStartAt": "2016-08-22T10:18:16Z",  
+    "plannedEndAt": "2016-08-28T10:18:16Z",  
+    "status": "finished",  
+    "operator": "urn:ngsi-ld:Person:fd6f0070-47d7-11e8-a26c-0784612b9393",  
+    "startedAt": "2016-08-22T10:18:16Z",  
+    "endedAt": "2016-08-28T10:18:16Z",  
+    "commandSequence": [  
+        "Select inks",  
+        "Prepare print masks",  
+        "Print shirts",  
+        "Clean print heads and rollers"  
+    ],  
+    "operationOutput": {  
+        "Units Printed": 1000,  
+        "Faults": 0  
+    }  
 }  
 ```  
+</details>  
 #### ManufacturingMachineOperation NGSI-LD normalisé Exemple  
 Voici un exemple de ManufacturingMachineOperation au format JSON-LD tel que normalisé. Ce format est compatible avec NGSI-LD lorsqu'il n'utilise pas d'options et renvoie les données contextuelles d'une entité individuelle.  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
-  "@context": [  
-    "https://smart-data-models.github.io/dataModel.ManufacturingMachine/ManufacturingOperation/context.jsonld"  
-  ],  
-  "id": "urn:ngsi-ld:MachineOperation:27577638-bd8a-4732-b418-fc8b949a0b0f",  
-  "type": "ManufacturingMachineOperation",  
-  "source": {  
-    "type": "Property",  
-    "value": "https://source.example.com"  
-  },  
-  "dataProvider": {  
-    "type": "Property",  
-    "value": "https://provider.example.com"  
-  },  
-  "machine": {  
-    "type": "Relationship",  
-    "object": "urn:ngsi-ld:Machine:2033a7c7-d31b-48e7-91c2-014dc426c29e"  
-  },  
-  "operationType": {  
-    "type": "Property",  
-    "value": [  
-      "process"  
-    ]  
-  },  
-  "description": {  
-    "type": "Property",  
-    "value": "Printing of 1000 T-shirts"  
-  },  
-  "result": {  
-    "type": "Property",  
-    "value": "ok"  
-  },  
-  "plannedStartAt": {  
-    "type": "Property",  
-    "value": {  
-      "@type": "DateTime",  
-      "@value": "2016-08-22T10:18:16Z"  
+    "@context": [  
+        "https://smart-data-models.github.io/dataModel.ManufacturingMachine/ManufacturingOperation/context.jsonld",  
+        "https://raw.githubusercontent.com/smart-data-models/dataModel.ManufacturingMachine/master/context.jsonld"  
+    ],  
+    "id": "urn:ngsi-ld:MachineOperation:27577638-bd8a-4732-b418-fc8b949a0b0f",  
+    "type": "ManufacturingMachineOperation",  
+    "source": {  
+        "type": "Property",  
+        "value": "https://source.example.com"  
+    },  
+    "dataProvider": {  
+        "type": "Property",  
+        "value": "https://provider.example.com"  
+    },  
+    "machine": {  
+        "type": "Relationship",  
+        "object": "urn:ngsi-ld:Machine:2033a7c7-d31b-48e7-91c2-014dc426c29e"  
+    },  
+    "operationType": {  
+        "type": "Property",  
+        "value": [  
+            "process"  
+        ]  
+    },  
+    "description": {  
+        "type": "Property",  
+        "value": "Printing of 1000 T-shirts"  
+    },  
+    "result": {  
+        "type": "Property",  
+        "value": "ok"  
+    },  
+    "plannedStartAt": {  
+        "type": "Property",  
+        "value": {  
+            "@type": "DateTime",  
+            "@value": "2016-08-22T10:18:16Z"  
+        }  
+    },  
+    "plannedEndAt": {  
+        "type": "Property",  
+        "value": {  
+            "@type": "DateTime",  
+            "@value": "2016-08-28T10:18:16Z"  
+        }  
+    },  
+    "status": {  
+        "type": "Property",  
+        "value": "finished"  
+    },  
+    "operator": {  
+        "type": "Relationship",  
+        "object": "urn:ngsi-ld:Person:fd6f0070-47d7-11e8-a26c-0784612b9393"  
+    },  
+    "startedAt": {  
+        "type": "Property",  
+        "value": {  
+            "@type": "DateTime",  
+            "@value": "2016-08-22T10:18:16Z"  
+        }  
+    },  
+    "endedAt": {  
+        "type": "Property",  
+        "value": {  
+            "@type": "DateTime",  
+            "@value": "2016-08-28T10:18:16Z"  
+        }  
+    },  
+    "commandSequence": {  
+        "type": "Property",  
+        "value": [  
+            "Select inks",  
+            "Prepare print masks",  
+            "Print shirts",  
+            "Clean print heads and rollers"  
+        ]  
+    },  
+    "operationOutput": {  
+        "type": "Property",  
+        "value": {  
+            "Units Printed": 1000,  
+            "Faults": 0  
+        }  
     }  
-  },  
-  "plannedEndAt": {  
-    "type": "Property",  
-    "value": {  
-      "@type": "DateTime",  
-      "@value": "2016-08-28T10:18:16Z"  
-    }  
-  },  
-  "status": {  
-    "type": "Property",  
-    "value": "finished"  
-  },  
-  "operator": {  
-    "type": "Relationship",  
-    "object": "urn:ngsi-ld:Person:fd6f0070-47d7-11e8-a26c-0784612b9393"  
-  },  
-  "startedAt": {  
-    "type": "Property",  
-    "value": {  
-      "@type": "DateTime",  
-      "@value":"2016-08-22T10:18:16Z"}  
-  },  
-  "endedAt": {  
-    "type": "Property",  
-    "value": {  
-      "@type": "DateTime",  
-      "@value":"2016-08-28T10:18:16Z"}  
-  },  
-  "commandSequence": {  
-    "type": "Property",  
-    "value": [  
-      "Select inks",  
-      "Prepare print masks",  
-      "Print shirts",  
-      "Clean print heads and rollers"  
-    ]  
-  },  
-  "operationOutput": {  
-    "type": "Property",  
-    "value": {  
-      "Units Printed": 1000,  
-      "Faults": 0  
-    }  
-  }  
 }  
 ```  
-Voir [FAQ 10](https://smartdatamodels.org/index.php/faqs/) pour obtenir une réponse sur la façon de traiter les unités de magnitude
+</details><!-- /80-Examples -->  
+<!-- 90-FooterNotes -->  
+<!-- /90-FooterNotes -->  
+<!-- 95-Units -->  
+Voir [FAQ 10](https://smartdatamodels.org/index.php/faqs/) pour obtenir une réponse sur la façon de traiter les unités de magnitude.  
+<!-- /95-Units -->  
+<!-- 97-LastFooter -->  
+---  
+[Smart Data Models](https://smartdatamodels.org) +++ [Contribution Manual](https://bit.ly/contribution_manual) +++ [About](https://bit.ly/Introduction_SDM)<!-- /97-LastFooter -->  
