@@ -1,0 +1,3 @@
+/* (Beta) Export of data model ManufacturingMachineModel of the subject dataModel.ManufacturingMachine for a postgreSQL database. Pending translation of enumerations and multityped attributes */
+CREATE TYPE ManufacturingMachineModel_type AS ENUM ('ManufacturingMachineModel');
+CREATE TABLE ManufacturingMachineModel (address json, alternateName text, areaServed text, brandName text, dataProvider text, dateCreated timestamp, dateModified timestamp, description text, documentation text, id text, location json, machineModelChildren json, machineModelParent text, manufacturerName text, manufacturingMachineType json, name text, owner json, processDescription text, root text, seeAlso json, source text, standardOperations json, type ManufacturingMachineModel_type, version text);
