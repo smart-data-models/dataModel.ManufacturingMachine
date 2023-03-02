@@ -1,8 +1,8 @@
 ManufacturingMachine:
-  description: 'Description of a generic machine'
+  description: Description of a generic machine
   properties:
     address:
-      description: 'The mailing address'
+      description: The mailing address
       properties:
         addressCountry:
           description: 'Property. The country. For example, Spain. Model:''https://schema.org/addressCountry'''
@@ -13,6 +13,9 @@ ManufacturingMachine:
         addressRegion:
           description: 'Property. The region in which the locality is, and which is in the country. Model:''https://schema.org/addressRegion'''
           type: string
+        district:
+          description: 'A district is a type of administrative division that, in some countries, is managed by the local government.'
+          type: string
         postOfficeBoxNumber:
           description: 'Property. The post office box number for PO box addresses. For example, 03578. Model:''https://schema.org/postOfficeBoxNumber'''
           type: string
@@ -22,23 +25,26 @@ ManufacturingMachine:
         streetAddress:
           description: 'Property. The street address. Model:''https://schema.org/streetAddress'''
           type: string
+        streetNr:
+          description: Number identifying a specific property on a public street.
+          type: string
       type: object
       x-ngsi:
         model: https://schema.org/address
         type: Property
     alternateName:
-      description: 'An alternative name for this item'
+      description: An alternative name for this item
       type: string
       x-ngsi:
         type: Property
     areaServed:
-      description: 'The geographic area where a service or offered item is provided'
+      description: The geographic area where a service or offered item is provided
       type: string
       x-ngsi:
         model: https://schema.org/Text
         type: Property
     assetIdentifier:
-      description: 'An asset identifier (e.g. asset tag number) assigned by the owner.'
+      description: An asset identifier (e.g. asset tag number) assigned by the owner.
       type: string
       x-ngsi:
         model: https://schema.org/Text
@@ -53,19 +59,19 @@ ManufacturingMachine:
         type: Property
     building:
       anyOf:
-        - description: 'Property. Identifier format of any NGSI entity'
+        - description: Property. Identifier format of any NGSI entity
           maxLength: 256
           minLength: 1
           pattern: ^[\w\-\.\{\}\$\+\*\[\]`|~^@!,:\\]+$
           type: string
-        - description: 'Property. Identifier format of any NGSI entity'
+        - description: Property. Identifier format of any NGSI entity
           format: uri
           type: string
-      description: 'Reference to the building entity instance into which this machine is installed'
+      description: Reference to the building entity instance into which this machine is installed
       x-ngsi:
         type: Relationship
     countryOfManufacture:
-      description: 'The country where this machine was manufactured.'
+      description: The country where this machine was manufactured.
       type: string
       x-ngsi:
         model: https://schema.org/Text
@@ -78,67 +84,67 @@ ManufacturingMachine:
         type: Property
         units: Amps
     dataProvider:
-      description: 'A sequence of characters identifying the provider of the harmonised data entity.'
+      description: A sequence of characters identifying the provider of the harmonised data entity.
       type: string
       x-ngsi:
         type: Property
     dateCreated:
-      description: 'Entity creation timestamp. This will usually be allocated by the storage platform.'
+      description: Entity creation timestamp. This will usually be allocated by the storage platform.
       format: date-time
       type: string
       x-ngsi:
         type: Property
     dateModified:
-      description: 'Timestamp of the last modification of the entity. This will usually be allocated by the storage platform.'
+      description: Timestamp of the last modification of the entity. This will usually be allocated by the storage platform.
       format: date-time
       type: string
       x-ngsi:
         type: Property
     description:
-      description: 'A description of this item'
+      description: A description of this item
       type: string
       x-ngsi:
         type: Property
     factory:
-      description: 'The factory name/code manufacturing this machine.'
+      description: The factory name/code manufacturing this machine.
       type: string
       x-ngsi:
         model: https://schema.org/Text
         type: Property
     firmwareVersion:
-      description: 'The (manufacturer specific) firmware version of this machine.'
+      description: The (manufacturer specific) firmware version of this machine.
       type: string
       x-ngsi:
         model: https://schema.org/Text
         type: Property
     firstUsedAt:
-      description: 'Indicates the date/time at which date and time the machine was first used (nominally in UTC).'
+      description: Indicates the date/time at which date and time the machine was first used (nominally in UTC).
       format: date-time
       type: string
       x-ngsi:
         model: https://schema.org/Text
         type: Property
     hardwareVersion:
-      description: 'The (manufacturer specific) hardware version of this machine.'
+      description: The (manufacturer specific) hardware version of this machine.
       type: string
       x-ngsi:
         model: https://schema.org/Text
         type: Property
     id:
       anyOf: &manufacturingmachine_-_properties_-_owner_-_items_-_anyof
-        - description: 'Property. Identifier format of any NGSI entity'
+        - description: Property. Identifier format of any NGSI entity
           maxLength: 256
           minLength: 1
           pattern: ^[\w\-\.\{\}\$\+\*\[\]`|~^@!,:\\]+$
           type: string
-        - description: 'Property. Identifier format of any NGSI entity'
+        - description: Property. Identifier format of any NGSI entity
           format: uri
           type: string
-      description: 'Unique identifier of the entity'
+      description: Unique identifier of the entity
       x-ngsi:
         type: Property
     installationNotes:
-      description: 'Notes relating to this machine installation.'
+      description: Notes relating to this machine installation.
       properties:
         docUri:
           format: uri
@@ -150,7 +156,7 @@ ManufacturingMachine:
         model: https://schema.org/Text
         type: Property
     installedAt:
-      description: 'Indicates the date/time at which date and time the machine was installed (nominally in UTC).'
+      description: Indicates the date/time at which date and time the machine was installed (nominally in UTC).
       format: date-time
       type: string
       x-ngsi:
@@ -159,7 +165,7 @@ ManufacturingMachine:
     location:
       description: 'Geojson reference to the item. It can be Point, LineString, Polygon, MultiPoint, MultiLineString or MultiPolygon'
       oneOf:
-        - description: 'Geoproperty. Geojson reference to the item. Point'
+        - description: GeoProperty. Geojson reference to the item. Point
           properties:
             bbox:
               items:
@@ -178,9 +184,9 @@ ManufacturingMachine:
           required:
             - type
             - coordinates
-          title: 'GeoJSON Point'
+          title: GeoJSON Point
           type: object
-        - description: 'Geoproperty. Geojson reference to the item. LineString'
+        - description: GeoProperty. Geojson reference to the item. LineString
           properties:
             bbox:
               items:
@@ -202,9 +208,9 @@ ManufacturingMachine:
           required:
             - type
             - coordinates
-          title: 'GeoJSON LineString'
+          title: GeoJSON LineString
           type: object
-        - description: 'Geoproperty. Geojson reference to the item. Polygon'
+        - description: GeoProperty. Geojson reference to the item. Polygon
           properties:
             bbox:
               items:
@@ -228,9 +234,9 @@ ManufacturingMachine:
           required:
             - type
             - coordinates
-          title: 'GeoJSON Polygon'
+          title: GeoJSON Polygon
           type: object
-        - description: 'Geoproperty. Geojson reference to the item. MultiPoint'
+        - description: GeoProperty. Geojson reference to the item. MultiPoint
           properties:
             bbox:
               items:
@@ -251,9 +257,9 @@ ManufacturingMachine:
           required:
             - type
             - coordinates
-          title: 'GeoJSON MultiPoint'
+          title: GeoJSON MultiPoint
           type: object
-        - description: 'Geoproperty. Geojson reference to the item. MultiLineString'
+        - description: GeoProperty. Geojson reference to the item. MultiLineString
           properties:
             bbox:
               items:
@@ -277,9 +283,9 @@ ManufacturingMachine:
           required:
             - type
             - coordinates
-          title: 'GeoJSON MultiLineString'
+          title: GeoJSON MultiLineString
           type: object
-        - description: 'Geoproperty. Geojson reference to the item. MultiLineString'
+        - description: GeoProperty. Geojson reference to the item. MultiLineString
           properties:
             bbox:
               items:
@@ -305,72 +311,72 @@ ManufacturingMachine:
           required:
             - type
             - coordinates
-          title: 'GeoJSON MultiPolygon'
+          title: GeoJSON MultiPolygon
           type: object
       x-ngsi:
-        type: Geoproperty
+        type: GeoProperty
     machineModel:
       anyOf:
-        - description: 'Property. Identifier format of any NGSI entity'
+        - description: Property. Identifier format of any NGSI entity
           maxLength: 256
           minLength: 1
           pattern: ^[\w\-\.\{\}\$\+\*\[\]`|~^@!,:\\]+$
           type: string
-        - description: 'Property. Identifier format of any NGSI entity'
+        - description: Property. Identifier format of any NGSI entity
           format: uri
           type: string
-      description: 'A reference to the associated Machine Model for this machine.'
+      description: A reference to the associated Machine Model for this machine.
       x-ngsi:
         type: Relationship
     machineOwner:
-      description: 'Reference to the owner or owners of the machine as either a Schema.org person or organization.'
+      description: Reference to the owner or owners of the machine as either a Schema.org person or organization.
       items:
         anyOf:
-          - description: 'Property. Identifier format of any NGSI entity'
+          - description: Property. Identifier format of any NGSI entity
             maxLength: 256
             minLength: 1
             pattern: ^[\w\-\.\{\}\$\+\*\[\]`|~^@!,:\\]+$
             type: string
-          - description: 'Property. Identifier format of any NGSI entity'
+          - description: Property. Identifier format of any NGSI entity
             format: uri
             type: string
       type: array
       x-ngsi:
         type: Relationship
     manufacturedAt:
-      description: 'Indicates the date/time at which date and time the machine was manufactured (nominally in UTC).'
+      description: Indicates the date/time at which date and time the machine was manufactured (nominally in UTC).
       format: date-time
       type: string
       x-ngsi:
         model: https://schema.org/Text
         type: Property
     name:
-      description: 'The name of this item.'
+      description: The name of this item.
       type: string
       x-ngsi:
         type: Property
     online:
-      description: 'The communication status of this machine. A logical representation of Offline (false) or Online (true).'
+      description: The communication status of this machine. A logical representation of Offline (false) or Online (true).
       type: boolean
       x-ngsi:
         model: https://schema.org/Boolean
         type: Property
     osVersion:
-      description: 'The (manufacturer specific) operating system version of this machine'
+      description: The (manufacturer specific) operating system version of this machine
       type: string
       x-ngsi:
         model: https://schema.org/Text
         type: Property
     owner:
-      description: 'A List containing a JSON encoded sequence of characters referencing the unique Ids of the owner(s)'
+      description: A List containing a JSON encoded sequence of characters referencing the unique Ids of the owner(s)
       items:
         anyOf: *manufacturingmachine_-_properties_-_owner_-_items_-_anyof
-        description: 'Property. Unique identifier of the entity'
+        description: Property. Unique identifier of the entity
       type: array
       x-ngsi:
         type: Property
     power:
-      description: 'The nominal rated power consumption of the machine in kW'
+      description: The nominal rated power consumption of the machine in kW
       type: number
       x-ngsi:
         model: https://schema.org/Number
@@ -384,7 +390,7 @@ ManufacturingMachine:
         type: Property
         units: rpm
     seeAlso:
-      description: 'list of uri pointing to additional resources about the item'
+      description: list of uri pointing to additional resources about the item
       oneOf:
         - items:
             format: uri
@@ -396,13 +402,13 @@ ManufacturingMachine:
       x-ngsi:
         type: Property
     serialNumber:
-      description: 'The serial number assigned by the manufacturer.'
+      description: The serial number assigned by the manufacturer.
       type: string
       x-ngsi:
         model: https://schema.org/Text
         type: Property
     softwareVersion:
-      description: 'The (manufacturer specific) software version of this machine.'
+      description: The (manufacturer specific) software version of this machine.
       type: string
       x-ngsi:
         model: https://schema.org/Text
@@ -413,7 +419,7 @@ ManufacturingMachine:
       x-ngsi:
         type: Property
     status:
-      description: 'Text formatted (current) machine status code or description. Expected to be the manufacturer or machine specific status code generated by the machine.'
+      description: Text formatted (current) machine status code or description. Expected to be the manufacturer or machine specific status code generated by the machine.
       type: string
       x-ngsi:
         model: https://schema.org/Text
@@ -422,25 +428,25 @@ ManufacturingMachine:
       description: 'Reference to service subscriptions related to this machine e.g. energy supplies, Internet Service Providers etc, maintenance'
       items:
         anyOf:
-          - description: 'Property. Identifier format of any NGSI entity'
+          - description: Property. Identifier format of any NGSI entity
             maxLength: 256
             minLength: 1
             pattern: ^[\w\-\.\{\}\$\+\*\[\]`|~^@!,:\\]+$
             type: string
-          - description: 'Property. Identifier format of any NGSI entity'
+          - description: Property. Identifier format of any NGSI entity
             format: uri
             type: string
       type: array
       x-ngsi:
         type: Relationship
     supplierName:
-      description: 'The name of the supplier of this machine.'
+      description: The name of the supplier of this machine.
       type: string
       x-ngsi:
         model: https://schema.org/Text
         type: Property
     supportedProtocol:
-      description: 'Supported protocol(s) or networks.'
+      description: Supported protocol(s) or networks.
       items:
         type: string
       type: array
@@ -448,7 +454,7 @@ ManufacturingMachine:
         model: https://schema.org/Text
         type: Property
     type:
-      description: 'NGSI entity type. It has to be ManufacturingMachine.'
+      description: NGSI entity type. It has to be ManufacturingMachine.
       enum:
         - ManufacturingMachine
       type: string
@@ -466,7 +472,7 @@ ManufacturingMachine:
     - type
   type: object
   x-derived-from: ""
-  x-disclaimer: 'Redistribution and use in source and binary forms, with or without modification, are permitted  provided that the license conditions are met. Copyleft (c) 2021 Contributors to Smart Data Models Program'
+  x-disclaimer: 'Redistribution and use in source and binary forms, with or without modification, are permitted  provided that the license conditions are met. Copyleft (c) 2022 Contributors to Smart Data Models Program'
   x-license-url: https://github.com/smart-data-models/dataModel.ManufacturingMachine/blob/master/ManufacturingMachine/LICENSE.md
   x-model-schema: https://smart-data-models.github.io/dataModel.ManufacturingMachine/ManufacturingMachine/schema.json
   x-model-tags: GSMA
