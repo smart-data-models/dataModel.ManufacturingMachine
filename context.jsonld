@@ -1,5 +1,8 @@
 {
     "@context": {
+        "ManufacturingMachine": "https://smartdatamodels.org/dataModel.ManufacturingMachine/ManufacturingMachine",
+        "ManufacturingMachineModel": "https://smartdatamodels.org/dataModel.ManufacturingMachine/ManufacturingMachineModel",
+        "ManufacturingMachineOperation": "https://smartdatamodels.org/dataModel.ManufacturingMachine/ManufacturingMachineOperation",
         "address": "https://smartdatamodels.org/address",
         "alternateName": "https://smartdatamodels.org/alternateName",
         "areaServed": "https://smartdatamodels.org/areaServed",
