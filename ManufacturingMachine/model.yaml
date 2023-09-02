@@ -1,95 +1,76 @@
 ManufacturingMachine:
-
   description: Description of a generic machine
-
   properties:
-
     address:
-
       description: The mailing address
-
       properties:
-
         addressCountry:
-          description: The country. For example, Spain
+          description: 'The country. For example, Spain'
           type: string
           x-ngsi:
             model: https://schema.org/addressCountry
             type: Property
-
         addressLocality:
-          description: The locality in which the street address is, and which is in the region
+          description: 'The locality in which the street address is, and which is in the region'
           type: string
           x-ngsi:
             model: https://schema.org/addressLocality
             type: Property
-
         addressRegion:
-          description: The region in which the locality is, and which is in the country
+          description: 'The region in which the locality is, and which is in the country'
           type: string
           x-ngsi:
             model: https://schema.org/addressRegion
             type: Property
-
         district:
-          description: A district is a type of administrative division that, in some countries, is managed by the local government
+          description: 'A district is a type of administrative division that, in some countries, is managed by the local government'
           type: string
           x-ngsi:
             type: Property
-
         postOfficeBoxNumber:
-          description: The post office box number for PO box addresses. For example, 03578
+          description: 'The post office box number for PO box addresses. For example, 03578'
           type: string
           x-ngsi:
             model: https://schema.org/postOfficeBoxNumber
             type: Property
-
         postalCode:
-          description: The postal code. For example, 24004
+          description: 'The postal code. For example, 24004'
           type: string
           x-ngsi:
             model: https://schema.org/https://schema.org/postalCode
             type: Property
-
         streetAddress:
           description: The street address
           type: string
           x-ngsi:
             model: https://schema.org/streetAddress
             type: Property
-
         streetNr:
           description: Number identifying a specific property on a public street
           type: string
           x-ngsi:
             type: Property
-
       type: object
-
       x-ngsi:
         model: https://schema.org/address
         type: Property
-
     alternateName:
       description: An alternative name for this item
       type: string
       x-ngsi:
         type: Property
-
     areaServed:
       description: The geographic area where a service or offered item is provided
       type: string
       x-ngsi:
         model: https://schema.org/Text
         type: Property
-
     assetIdentifier:
       description: An asset identifier (e.g. asset tag number) assigned by the owner
       type: string
       x-ngsi:
         model: https://schema.org/Text
         type: Property
-
     batteryLevel:
       description: 'Battery level. It must be equal to: 1.0 When the battery charge is full. 0.0 When the battery charge empty. Null when it cannot be determined'
       maximum: 1
@@ -98,7 +79,6 @@ ManufacturingMachine:
       x-ngsi:
         model: https://schema.org/Number
         type: Property
-
     building:
       anyOf:
         - description: Identifier format of any NGSI entity
@@ -116,62 +96,53 @@ ManufacturingMachine:
       description: Reference to the building entity instance into which this machine is installed
       x-ngsi:
         type: Relationship
-
     countryOfManufacture:
       description: The country where this machine was manufactured
       type: string
       x-ngsi:
         model: https://schema.org/Text
         type: Property
-
     current:
-      description: The nominal required supply current (at the nominal supply voltage), in amps
+      description: 'The nominal required supply current (at the nominal supply voltage), in amps'
       type: number
       x-ngsi:
         model: https://schema.org/Number
         type: Property
         units: Amps
-
     dataProvider:
       description: A sequence of characters identifying the provider of the harmonised data entity
       type: string
       x-ngsi:
         type: Property
-
     dateCreated:
       description: Entity creation timestamp. This will usually be allocated by the storage platform
       format: date-time
       type: string
       x-ngsi:
         type: Property
-
     dateModified:
       description: Timestamp of the last modification of the entity. This will usually be allocated by the storage platform
       format: date-time
       type: string
       x-ngsi:
         type: Property
-
     description:
       description: A description of this item
       type: string
       x-ngsi:
         type: Property
-
     factory:
       description: The factory name/code manufacturing this machine
       type: string
       x-ngsi:
         model: https://schema.org/Text
         type: Property
-
     firmwareVersion:
       description: The (manufacturer specific) firmware version of this machine
       type: string
       x-ngsi:
         model: https://schema.org/Text
         type: Property
-
     firstUsedAt:
       description: Indicates the date/time at which date and time the machine was first used (nominally in UTC)
       format: date-time
@@ -179,14 +150,12 @@ ManufacturingMachine:
       x-ngsi:
         model: https://schema.org/Text
         type: Property
-
     hardwareVersion:
       description: The (manufacturer specific) hardware version of this machine
       type: string
       x-ngsi:
         model: https://schema.org/Text
         type: Property
-
     id:
       anyOf:
         - description: Identifier format of any NGSI entity
@@ -204,7 +173,6 @@ ManufacturingMachine:
       description: Unique identifier of the entity
       x-ngsi:
         type: Property
-
     installationNotes:
       description: Notes relating to this machine installation
       properties:
@@ -217,7 +185,6 @@ ManufacturingMachine:
       x-ngsi:
         model: https://schema.org/Text
         type: Property
-
     installedAt:
       description: Indicates the date/time at which date and time the machine was installed (nominally in UTC)
       format: date-time
@@ -225,13 +192,9 @@ ManufacturingMachine:
       x-ngsi:
         model: https://schema.org/Text
         type: Property
-
     location:
-
-      description: Geojson reference to the item. It can be Point, LineString, Polygon, MultiPoint, MultiLineString or MultiPolygon
-
+      description: 'Geojson reference to the item. It can be Point, LineString, Polygon, MultiPoint, MultiLineString or MultiPolygon'
       oneOf:
-
         - description: Geojson reference to the item. Point
           properties:
             bbox:
@@ -255,7 +218,6 @@ ManufacturingMachine:
           type: object
           x-ngsi:
             type: GeoProperty
-
         - description: Geojson reference to the item. LineString
           properties:
             bbox:
@@ -282,7 +244,6 @@ ManufacturingMachine:
           type: object
           x-ngsi:
             type: GeoProperty
-
         - description: Geojson reference to the item. Polygon
           properties:
             bbox:
@@ -311,7 +272,6 @@ ManufacturingMachine:
           type: object
           x-ngsi:
             type: GeoProperty
-
         - description: Geojson reference to the item. MultiPoint
           properties:
             bbox:
@@ -337,7 +297,6 @@ ManufacturingMachine:
           type: object
           x-ngsi:
             type: GeoProperty
-
         - description: Geojson reference to the item. MultiLineString
           properties:
             bbox:
@@ -366,7 +325,6 @@ ManufacturingMachine:
           type: object
           x-ngsi:
             type: GeoProperty
-
         - description: Geojson reference to the item. MultiLineString
           properties:
             bbox:
@@ -397,10 +355,8 @@ ManufacturingMachine:
           type: object
           x-ngsi:
             type: GeoProperty
-
       x-ngsi:
         type: GeoProperty
-
     machineModel:
       anyOf:
         - description: Identifier format of any NGSI entity
@@ -418,7 +374,6 @@ ManufacturingMachine:
       description: A reference to the associated Machine Model for this machine
       x-ngsi:
         type: Relationship
-
     machineOwner:
       description: Reference to the owner or owners of the machine as either a Schema.org person or organization
       items:
@@ -438,7 +393,6 @@ ManufacturingMachine:
       type: array
       x-ngsi:
         type: Relationship
-
     manufacturedAt:
       description: Indicates the date/time at which date and time the machine was manufactured (nominally in UTC)
       format: date-time
@@ -446,27 +400,23 @@ ManufacturingMachine:
       x-ngsi:
         model: https://schema.org/Text
         type: Property
-
     name:
       description: The name of this item
       type: string
       x-ngsi:
         type: Property
-
     online:
       description: The communication status of this machine. A logical representation of Offline (false) or Online (true)
       type: boolean
       x-ngsi:
         model: https://schema.org/Boolean
         type: Property
-
     osVersion:
       description: The (manufacturer specific) operating system version of this machine
       type: string
       x-ngsi:
         model: https://schema.org/Text
         type: Property
-
     owner:
       description: A List containing a JSON encoded sequence of characters referencing the unique Ids of the owner(s)
       items:
@@ -489,7 +439,6 @@ ManufacturingMachine:
       type: array
       x-ngsi:
         type: Property
-
     power:
       description: The nominal rated power consumption of the machine in kW
       type: number
@@ -497,15 +446,13 @@ ManufacturingMachine:
         model: https://schema.org/Number
         type: Property
         units: Kw
-
     rotationalSpeed:
-      description: " \tThe maximum rotational speed in rpm (for machines such as drills, lathes)"
+      description: ' 	The maximum rotational speed in rpm (for machines such as drills, lathes)'
       type: number
       x-ngsi:
         model: https://schema.org/Number
         type: Property
         units: rpm
-
     seeAlso:
       description: list of uri pointing to additional resources about the item
       oneOf:
@@ -518,36 +465,31 @@ ManufacturingMachine:
           type: string
       x-ngsi:
         type: Property
-
     serialNumber:
       description: The serial number assigned by the manufacturer
       type: string
       x-ngsi:
         model: https://schema.org/Text
         type: Property
-
     softwareVersion:
       description: The (manufacturer specific) software version of this machine
       type: string
       x-ngsi:
         model: https://schema.org/Text
         type: Property
-
     source:
-      description: A sequence of characters giving the original source of the entity data as a URL. Recommended to be the fully qualified domain name of the source provider, or the URL to the source object
+      description: 'A sequence of characters giving the original source of the entity data as a URL. Recommended to be the fully qualified domain name of the source provider, or the URL to the source object'
       type: string
       x-ngsi:
         type: Property
-
     status:
       description: Text formatted (current) machine status code or description. Expected to be the manufacturer or machine specific status code generated by the machine
       type: string
       x-ngsi:
         model: https://schema.org/Text
         type: Property
-
     subscriptionService:
-      description: Reference to service subscriptions related to this machine e.g. energy supplies, Internet Service Providers etc, maintenance
+      description: 'Reference to service subscriptions related to this machine e.g. energy supplies, Internet Service Providers etc, maintenance'
       items:
         anyOf:
           - description: Identifier format of any NGSI entity
@@ -565,14 +507,12 @@ ManufacturingMachine:
       type: array
       x-ngsi:
         type: Relationship
-
     supplierName:
       description: The name of the supplier of this machine
       type: string
       x-ngsi:
         model: https://schema.org/Text
         type: Property
-
     supportedProtocol:
       description: Supported protocol(s) or networks
       items:
@@ -581,7 +521,6 @@ ManufacturingMachine:
       x-ngsi:
         model: https://schema.org/Text
         type: Property
-
     type:
       description: NGSI entity type. It has to be ManufacturingMachine
       enum:
@@ -589,29 +528,20 @@ ManufacturingMachine:
       type: string
       x-ngsi:
         type: Property
-
     voltage:
-      description: The nominal required supply voltage, in volts
+      description: 'The nominal required supply voltage, in volts'
       type: number
       x-ngsi:
         model: https://schema.org/Number
         type: Property
         units: Volts
-
   required:
     - id
     - type
-
   type: object
-
-  x-derived-from: ''
-
-  x-disclaimer: Redistribution and use in source and binary forms, with or without modification, are permitted  provided that the license conditions are met. Copyleft (c) 2022 Contributors to Smart Data Models Program
-
+  x-derived-from: ""
+  x-disclaimer: 'Redistribution and use in source and binary forms, with or without modification, are permitted  provided that the license conditions are met. Copyleft (c) 2022 Contributors to Smart Data Models Program'
   x-license-url: https://github.com/smart-data-models/dataModel.ManufacturingMachine/blob/master/ManufacturingMachine/LICENSE.md
-
   x-model-schema: https://smart-data-models.github.io/dataModel.ManufacturingMachine/ManufacturingMachine/schema.json
-
   x-model-tags: GSMA
-
   x-version: 0.0.1
