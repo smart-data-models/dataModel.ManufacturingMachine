@@ -11,9 +11,17 @@
         "areaServed": "https://smartdatamodels.org/areaServed",
         "assetIdentifier": "https://smartdatamodels.org/dataModel.ManufacturingMachine/assetIdentifier",
         "batteryLevel": "https://smartdatamodels.org/dataModel.ManufacturingMachine/batteryLevel",
+        "bbox": {
+            "@container": "@list",
+            "@id": "geojson:bbox"
+        },
         "brandName": "https://smartdatamodels.org/dataModel.ManufacturingMachine/brandName",
         "building": "https://smartdatamodels.org/dataModel.ManufacturingMachine/building",
         "commandSequence": "https://smartdatamodels.org/dataModel.ManufacturingMachine/commandSequence",
+        "coordinates": {
+            "@container": "@list",
+            "@id": "geojson:coordinates"
+        },
         "countryOfManufacture": "https://smartdatamodels.org/dataModel.ManufacturingMachine/countryOfManufacture",
         "current": "https://smartdatamodels.org/dataModel.ManufacturingMachine/current",
         "dataProvider": "https://smartdatamodels.org/dataProvider",
