@@ -49,7 +49,7 @@
   },
   "endedAt": {
     "type": "DateTime",
-    "@value": "2016-08-28T10:18:16Z"
+    "value": "2016-08-28T10:18:16Z"
   },
   "commandSequence": {
     "type": "array",
