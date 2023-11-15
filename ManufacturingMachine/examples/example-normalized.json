@@ -10,7 +10,7 @@
     "value": "https://provider.example.com"
   },
   "machineModel": {
-    "type": "Relationship",
+    "type": "Text",
     "value": "urn:ngsi-ld:MachineModel:00b42701-43e1-482d-aa7a-e2956cfd69c3"
   },
   "serialNumber": {
@@ -50,7 +50,7 @@
     "value": "Industrial machine to create plastic bottles"
   },
   "owner": {
-    "type": "Relationship",
+    "type": "StructuredValue",
     "value": [
       "urn:ngsi-ld:Person:a498182c-47c0-11e8-be4e-2c4d549a1ab2",
       "urn:ngsi-ld:Organization:abb20712-47c0-11e8-8742-2c4d549a1ab2"
@@ -73,7 +73,7 @@
     "value": "10A"
   },
   "supportedProtocol": {
-    "type": "array",
+    "type": "StructuredValue",
     "value": [
       "HTTP",
       "HTTPS",
@@ -81,7 +81,7 @@
     ]
   },
   "building": {
-    "type": "Relationship",
+    "type": "Text",
     "value": "urn:ngsi-ld:Building:8683b757-649c-49e0-ac89-ad392c9a0d0c"
   },
   "location": {
@@ -95,14 +95,14 @@
     }
   },
   "subscriptionService": {
-    "type": "Relationship",
+    "type": "StructuredValue",
     "value": [
       "urn:ngsi-ld:SubscriptionService:0d95b03c-47c1-11e8-99fd-2c4d549a1ab2",
       "urn:ngsi-ld:SubscriptionService:1527d0fa-47c1-11e8-8fb1-2c4d549a1ab2"
     ]
   },
   "online": {
-    "type": "Text",
+    "type": "Boolean",
     "value": true
   },
   "status": {
@@ -125,7 +125,7 @@
     "value": 220
   },
   "current": {
-    "type": "Text",
+    "type": "Number",
     "value": 20
   },
   "power": {
