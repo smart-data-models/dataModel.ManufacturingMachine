@@ -24,33 +24,38 @@
 #         curl -X GET http://localhost:1026/ngsi-ld/v1/entities?local=true&limit=1000
 #         
 #         # now the python code you can use to insert some value in the context broker according to the data model
+#         # Version Warning! 
+#         # This code is designed to work with the version 0.8 of pysmartdatamodels or later
+#         # to work with earlier version you need to replace the import instruction for
+#         # from pysmartdatamodels import pysmartdatamodels as sdm
 #         
-from pysmartdatamodels import pysmartdatamodels as sdm
+#         
+import pysmartdatamodels as sdm
 import subprocess
 serverUrl = "http://localhost:1026" # supposed that your broker is installed in localhost. Edit to match your configuration
 dataModel = "ManufacturingMachine"
 subject = "dataModel.ManufacturingMachine"
-machineModel = "{'type': 'Relationship', 'object': 'urn:ngsi-ld:MachineModel:00b42701-43e1-482d-aa7a-e2956cfd69c3'}"
-attribute = "machineModel"
-value = machineModel
-# The next line creates the query for inserting this attribute in a NGSI-LD context broker if the attribute does not exist it creates it
-print(sdm.update_broker(dataModel, subject, attribute, value, serverUrl=serverUrl, updateThenCreate=True))
-
-serialNumber = "{'type': 'Property', 'value': 'X9923456789F'}"
-attribute = "serialNumber"
-value = serialNumber
-# The next line creates the query for inserting this attribute in a NGSI-LD context broker if the attribute does not exist it creates it
-print(sdm.update_broker(dataModel, subject, attribute, value, serverUrl=serverUrl, updateThenCreate=True))
-
-assetIdentifier = "{'type': 'Property', 'value': 'ID12345'}"
+assetIdentifier = "ID12345"
 attribute = "assetIdentifier"
 value = assetIdentifier
 # The next line creates the query for inserting this attribute in a NGSI-LD context broker if the attribute does not exist it creates it
 print(sdm.update_broker(dataModel, subject, attribute, value, serverUrl=serverUrl, updateThenCreate=True))
 
-supplierName = "{'type': 'Property', 'value': 'ACME NorthEast Inc.'}"
-attribute = "supplierName"
-value = supplierName
+batteryLevel = 0.7
+attribute = "batteryLevel"
+value = batteryLevel
+# The next line creates the query for inserting this attribute in a NGSI-LD context broker if the attribute does not exist it creates it
+print(sdm.update_broker(dataModel, subject, attribute, value, serverUrl=serverUrl, updateThenCreate=True))
+
+building = "urn:ngsi-ld:Building:8683b757-649c-49e0-ac89-ad392c9a0d0c"
+attribute = "building"
+value = building
+# The next line creates the query for inserting this attribute in a NGSI-LD context broker if the attribute does not exist it creates it
+print(sdm.update_broker(dataModel, subject, attribute, value, serverUrl=serverUrl, updateThenCreate=True))
+
+countryOfManufacture = "UK"
+attribute = "countryOfManufacture"
+value = countryOfManufacture
 # The next line creates the query for inserting this attribute in a NGSI-LD context broker if the attribute does not exist it creates it
 print(sdm.update_broker(dataModel, subject, attribute, value, serverUrl=serverUrl, updateThenCreate=True))
 
