@@ -13,14 +13,14 @@
         "batteryLevel": "https://smartdatamodels.org/dataModel.ManufacturingMachine/batteryLevel",
         "bbox": {
             "@container": "@list",
-            "@id": "geojson:bbox"
+            "@id": "https://purl.org/geojson/vocab#bbox"
         },
         "brandName": "https://smartdatamodels.org/dataModel.ManufacturingMachine/brandName",
         "building": "https://smartdatamodels.org/dataModel.ManufacturingMachine/building",
         "commandSequence": "https://smartdatamodels.org/dataModel.ManufacturingMachine/commandSequence",
         "coordinates": {
             "@container": "@list",
-            "@id": "geojson:coordinates"
+            "@id": "https://purl.org/geojson/vocab#coordinates"
         },
         "countryOfManufacture": "https://smartdatamodels.org/dataModel.ManufacturingMachine/countryOfManufacture",
         "current": "https://smartdatamodels.org/dataModel.ManufacturingMachine/current",
@@ -40,7 +40,7 @@
         "id": "@id",
         "installationNotes": "https://smartdatamodels.org/dataModel.ManufacturingMachine/installationNotes",
         "installedAt": "https://smartdatamodels.org/dataModel.ManufacturingMachine/installedAt",
-        "location": "ngsi-ld:location",
+        "location": "https://uri.etsi.org/ngsi-ld/location",
         "machine": "https://smartdatamodels.org/dataModel.ManufacturingMachine/machine",
         "machineModel": "https://smartdatamodels.org/dataModel.ManufacturingMachine/machineModel",
         "machineModelChildren": "https://smartdatamodels.org/dataModel.ManufacturingMachine/machineModelChildren",
@@ -72,7 +72,7 @@
         "source": "https://smartdatamodels.org/source",
         "standardOperations": "https://smartdatamodels.org/dataModel.ManufacturingMachine/standardOperations",
         "startedAt": "https://smartdatamodels.org/dataModel.ManufacturingMachine/startedAt",
-        "status": "ngsi-ld:status",
+        "status": "https://uri.etsi.org/ngsi-ld/status",
         "streetAddress": "https://smartdatamodels.org/streetAddress",
         "streetNr": "https://smartdatamodels.org/streetNr",
         "subscriptionService": "https://smartdatamodels.org/dataModel.ManufacturingMachine/subscriptionService",
@@ -80,7 +80,7 @@
         "supportedProtocol": "https://smartdatamodels.org/dataModel.ManufacturingMachine/supportedProtocol",
         "type": "@type",
         "unitsPrinted": "https://smartdatamodels.org/dataModel.ManufacturingMachine/unitsPrinted",
-        "value": "ngsi-ld:hasValue",
+        "value": "https://uri.etsi.org/ngsi-ld/hasValue",
         "version": "https://smartdatamodels.org/dataModel.ManufacturingMachine/version",
         "voltage": "https://smartdatamodels.org/dataModel.ManufacturingMachine/voltage"
     }
