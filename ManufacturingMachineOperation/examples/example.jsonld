@@ -1,8 +1,4 @@
 {
-  "@context": [
-    "https://smart-data-models.github.io/dataModel.ManufacturingMachine/ManufacturingOperation/context.jsonld",
-    "https://raw.githubusercontent.com/smart-data-models/dataModel.ManufacturingMachine/master/context.jsonld"
-  ],
   "id": "urn:ngsi-ld:MachineOperation:27577638-bd8a-4732-b418-fc8b949a0b0f",
   "type": "ManufacturingMachineOperation",
   "source": "https://source.example.com",
@@ -28,5 +24,8 @@
   "operationOutput": {
     "Units Printed": 1000,
     "Faults": 0
-  }
+  },
+  "@context": [
+    "https://raw.githubusercontent.com/smart-data-models/dataModel.ManufacturingMachine/master/context.jsonld"
+  ]
 }

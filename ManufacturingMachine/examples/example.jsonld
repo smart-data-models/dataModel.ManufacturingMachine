@@ -1,9 +1,6 @@
 {
-  "@context": [
-    "https://smartdatamodels.org/context.jsonld",
-    "https://raw.githubusercontent.com/GSMADeveloper/NGSI-LD-Entities/master/examples/Machine-context.jsonld",
-    "https://raw.githubusercontent.com/smart-data-models/dataModel.ManufacturingMachine/master/context.jsonld"
-  ],
+  "id": "urn:ngsi-ld:Machine:9166c528-9c98-4579-a5d3-8068aea5d6c0",
+  "type": "ManufacturingMachine",
   "assetIdentifier": "ID12345",
   "batteryLevel": 0.7,
   "building": "urn:ngsi-ld:Building:8683b757-649c-49e0-ac89-ad392c9a0d0c",
@@ -15,7 +12,6 @@
   "firmwareVersion": "A.10",
   "firstUsedAt": "2017-05-04T10:18:16Z",
   "hardwareVersion": "2.1",
-  "id": "urn:ngsi-ld:Machine:9166c528-9c98-4579-a5d3-8068aea5d6c0",
   "installationNotes": {
     "docUri": "http://example.com/sample/machine-instructions.pdf",
     "value": "Installed according to manufacturer instructions."
@@ -52,6 +48,8 @@
     "HTTPS",
     "FTP"
   ],
-  "type": "ManufacturingMachine",
-  "voltage": 220
+  "voltage": 220,
+  "@context": [
+    "https://raw.githubusercontent.com/GSMADeveloper/NGSI-LD-Entities/master/examples/Machine-context.jsonld"
+  ]
 }

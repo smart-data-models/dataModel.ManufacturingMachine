@@ -1,86 +1,85 @@
 {
-    "@context": [
-        "https://smart-data-models.github.io/dataModel.ManufacturingMachine/ManufacturingOperation/context.jsonld",
-        "https://raw.githubusercontent.com/smart-data-models/dataModel.ManufacturingMachine/master/context.jsonld"
-    ],
-    "id": "urn:ngsi-ld:MachineOperation:27577638-bd8a-4732-b418-fc8b949a0b0f",
-    "type": "ManufacturingMachineOperation",
-    "source": {
-        "type": "Property",
-        "value": "https://source.example.com"
-    },
-    "dataProvider": {
-        "type": "Property",
-        "value": "https://provider.example.com"
-    },
-    "machine": {
-        "type": "Relationship",
-        "object": "urn:ngsi-ld:Machine:2033a7c7-d31b-48e7-91c2-014dc426c29e"
-    },
-    "operationType": {
-        "type": "Property",
-        "value": [
-            "process"
-        ]
-    },
-    "description": {
-        "type": "Property",
-        "value": "Printing of 1000 T-shirts"
-    },
-    "result": {
-        "type": "Property",
-        "value": "ok"
-    },
-    "plannedStartAt": {
-        "type": "Property",
-        "value": {
-            "@type": "DateTime",
-            "@value": "2016-08-22T10:18:16Z"
-        }
-    },
-    "plannedEndAt": {
-        "type": "Property",
-        "value": {
-            "@type": "DateTime",
-            "@value": "2016-08-28T10:18:16Z"
-        }
-    },
-    "status": {
-        "type": "Property",
-        "value": "finished"
-    },
-    "operator": {
-        "type": "Relationship",
-        "object": "urn:ngsi-ld:Person:fd6f0070-47d7-11e8-a26c-0784612b9393"
-    },
-    "startedAt": {
-        "type": "Property",
-        "value": {
-            "@type": "DateTime",
-            "@value": "2016-08-22T10:18:16Z"
-        }
-    },
-    "endedAt": {
-        "type": "Property",
-        "value": {
-            "@type": "DateTime",
-            "@value": "2016-08-28T10:18:16Z"
-        }
-    },
-    "commandSequence": {
-        "type": "Property",
-        "value": [
-            "Select inks",
-            "Prepare print masks",
-            "Print shirts",
-            "Clean print heads and rollers"
-        ]
-    },
-    "operationOutput": {
-        "type": "Property",
-        "value": {
-            "Units Printed": 1000,
-            "Faults": 0
-        }
+  "id": "urn:ngsi-ld:MachineOperation:27577638-bd8a-4732-b418-fc8b949a0b0f",
+  "type": "ManufacturingMachineOperation",
+  "source": {
+    "type": "Property",
+    "value": "https://source.example.com"
+  },
+  "dataProvider": {
+    "type": "Property",
+    "value": "https://provider.example.com"
+  },
+  "machine": {
+    "type": "Relationship",
+    "object": "urn:ngsi-ld:Machine:2033a7c7-d31b-48e7-91c2-014dc426c29e"
+  },
+  "operationType": {
+    "type": "Property",
+    "value": [
+      "process"
+    ]
+  },
+  "description": {
+    "type": "Property",
+    "value": "Printing of 1000 T-shirts"
+  },
+  "result": {
+    "type": "Property",
+    "value": "ok"
+  },
+  "plannedStartAt": {
+    "type": "Property",
+    "value": {
+      "@type": "DateTime",
+      "@value": "2016-08-22T10:18:16Z"
     }
+  },
+  "plannedEndAt": {
+    "type": "Property",
+    "value": {
+      "@type": "DateTime",
+      "@value": "2016-08-28T10:18:16Z"
+    }
+  },
+  "status": {
+    "type": "Property",
+    "value": "finished"
+  },
+  "operator": {
+    "type": "Relationship",
+    "object": "urn:ngsi-ld:Person:fd6f0070-47d7-11e8-a26c-0784612b9393"
+  },
+  "startedAt": {
+    "type": "Property",
+    "value": {
+      "@type": "DateTime",
+      "@value": "2016-08-22T10:18:16Z"
+    }
+  },
+  "endedAt": {
+    "type": "Property",
+    "value": {
+      "@type": "DateTime",
+      "@value": "2016-08-28T10:18:16Z"
+    }
+  },
+  "commandSequence": {
+    "type": "Property",
+    "value": [
+      "Select inks",
+      "Prepare print masks",
+      "Print shirts",
+      "Clean print heads and rollers"
+    ]
+  },
+  "operationOutput": {
+    "type": "Property",
+    "value": {
+      "Units Printed": 1000,
+      "Faults": 0
+    }
+  },
+  "@context": [
+    "https://raw.githubusercontent.com/smart-data-models/dataModel.ManufacturingMachine/master/context.jsonld"
+  ]
 }
