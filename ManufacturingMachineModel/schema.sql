@@ -1,3 +1,28 @@
 /* (Beta) Export of data model ManufacturingMachineModel of the subject dataModel.ManufacturingMachine for a PostgreSQL database. Pending translation of enumerations and multityped attributes */
 CREATE TYPE ManufacturingMachineModel_type AS ENUM ('ManufacturingMachineModel');
-CREATE TABLE ManufacturingMachineModel (address JSON, alternateName TEXT, areaServed TEXT, brandName TEXT, dataProvider TEXT, dateCreated TIMESTAMP, dateModified TIMESTAMP, description TEXT, documentation TEXT, id TEXT PRIMARY KEY, location JSON, machineModelChildren JSON, manufacturerName TEXT, manufacturingMachineType JSON, name TEXT, owner JSON, processDescription TEXT, root BOOLEAN, seeAlso JSON, source TEXT, standardOperations JSON, type ManufacturingMachineModel_type, version TEXT);
+CREATE TABLE ManufacturingMachineModel (
+  "address" JSON,
+  "alternateName" TEXT,
+  "areaServed" TEXT,
+  "brandName" TEXT,
+  "dataProvider" TEXT,
+  "dateCreated" TIMESTAMP,
+  "dateModified" TIMESTAMP,
+  "description" TEXT,
+  "documentation" TEXT,
+  "id" TEXT PRIMARY KEY,
+  "location" JSON,
+  "machineModelChildren" JSON,
+  "machineModelParent" JSON,
+  "manufacturerName" TEXT,
+  "manufacturingMachineType" JSON,
+  "name" TEXT,
+  "owner" JSON,
+  "processDescription" TEXT,
+  "root" BOOLEAN,
+  "seeAlso" JSON,
+  "source" TEXT,
+  "standardOperations" JSON,
+  "type" ManufacturingMachineModel_type,
+  "version" TEXT
+);
